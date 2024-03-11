@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const {config} = require('./config');
+const {config} = require('./config/index');
 
 
 
@@ -14,7 +14,7 @@ app.use(cors());
 
 app.get('/',
     async(req,res,next)=>{
-        res.send('Bienvenido a api MakeUp');
+        res.send('Welcome to api MakeUp');
     }
 );
 
