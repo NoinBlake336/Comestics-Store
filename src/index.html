@@ -15,7 +15,7 @@
 
 <body>
     <div class="w-screen h-screen bg-gradient-to-t from-[#b96d73] to-[#cf656d] flex justify-center items-center">
-        <div class="w-4/5 h-4/5 bg-[#f3d4d2]  grid grid-rows-[50px_minmax(150px,1fr)] rounded-md relative">
+        <div class="w-4/5 h-4/5 bg-[#f3d4d2]  grid grid-rows-[50px_minmax(150px,1fr)] rounded-md relative md:w-11/12 h-[95%]">
             <div class="grid grid-cols-[100px_minmax(100px,1fr)] z-3">
                 <figure class="w-full">
                     <img src="./img/Mesa de trabajo 1.png" alt="">
@@ -41,22 +41,29 @@
                     </svg>
                 </div>
             </div>
-            <div class="grid grid-rows-4">
-                <div class="justify-self-center self-center text-sm font-medium">
-                    <p class="">TIENDA ONLINE DE MAQUILLAJE</p>
+            <div class="flex justify-center items-center flex-col md:grid grid-cols-2 ">
+                <div class="flex justify-center items-center flex-col">
+                    <div class="justify-self-center self-center text-sm font-medium md:text-xl ">
+                        <p class="">TIENDA ONLINE DE MAQUILLAJE</p>
+                    </div>
+                    <div class="">
+                        <figure class=" w-full h-full">
+                            <img class="w-[400px]" src="./img/1x/letter.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="">
+                        <p class="justify-self-center self-center text-xs p-7 text-center md:text-lg">Compra facilmente productos de
+                            maquillaje, comesticos y cuidado de la piel favoritos
+                            desde tu casa. Envios a nivel nacional en 24-48hs. </p>
+                    </div>
+                    <div class="justify-self-center self-center">
+                        <button class="bg-[#333232] text-white p-2 text-sm rounded-md hover:bg-[#cf656d] transition">Ver colección</button>
+                    </div>
                 </div>
-                <div class="">
-                    <figure>
-                        <img src="" alt="">
+                <div class="hidden md:block w-full h-full">
+                    <figure class="h-full">
+                        <img src="./img/mujer-negra-labios-rosa-claro-enviando-beso_x4.png" alt="" class="h-full object-cover">
                     </figure>
-                </div>
-                <div class="">
-                    <p class="justify-self-center self-center text-xs p-7 text-center  ">Compra facilmente productos de
-                        maquillaje, comesticos y cuidado de la piel favoritos
-                        desde tu casa. Envios a nivel nacional en 24-48hs. </p>
-                </div>
-                <div class="justify-self-center self-center ">
-                    <button class="bg-[#333232] text-white p-2 text-sm rounded-md">Ver colección</button>
                 </div>
             </div>
 
