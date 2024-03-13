@@ -20,8 +20,25 @@
                 <figure class="w-full">
                     <img src="./img/Mesa de trabajo 1.png" alt="">
                 </figure>
-                <div class="justify-self-end self-center pr-5">
-                    <i class="fa-solid fa-bars" style="color: #e87d85;"></i>
+                <div  class="justify-self-end self-center pr-5">
+                    <div id="container-menu" class="menu w-9 rotate-180">
+                        <input type="checkbox" />
+                        <svg>
+                            <use xlink:href="#menu" />
+                            <use xlink:href="#menu" />
+                        </svg>
+                    </div>
+                    <div id="back" class="hidden text-xl rotate-180 pl-2">
+                        <i id="icon-back" class="fa-solid fa-chevron-left" style="color: #e87d85;"></i>
+                    </div>
+
+                    <!-- SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 56" id="menu">
+                            <path
+                                d="M48.33,45.6H18a14.17,14.17,0,0,1,0-28.34H78.86a17.37,17.37,0,0,1,0,34.74H42.33l-21-21.26L47.75,4" />
+                        </symbol>
+                    </svg>
                 </div>
             </div>
             <div class="grid grid-rows-4">
@@ -34,47 +51,49 @@
                     </figure>
                 </div>
                 <div class="">
-                    <p class="justify-self-center self-center text-xs p-7 text-center  ">Compra facilmente productos de maquillaje, comesticos y cuidado de la piel favoritos
+                    <p class="justify-self-center self-center text-xs p-7 text-center  ">Compra facilmente productos de
+                        maquillaje, comesticos y cuidado de la piel favoritos
                         desde tu casa. Envios a nivel nacional en 24-48hs. </p>
                 </div>
                 <div class="justify-self-center self-center ">
-                    <button class="bg-[#333232] text-white p-2 text-sm rounded-md" >Ver colección</button>
+                    <button class="bg-[#333232] text-white p-2 text-sm rounded-md">Ver colección</button>
                 </div>
             </div>
 
-            <div class="absolute w-full h-full bg-[#e87d85] rounded-md">
-                <div class="grid grid-cols-[100px_minmax(100px,1fr)] z-3">
-                    <figure class="w-full">
-                        <img src="./img/Mesa de trabajo 1.png" alt="">
-                    </figure>
-                    <div class="justify-self-end self-center pr-5">
-                        <i class="fa-solid fa-bars" style="color: #fbc2c7;"></i>
-                    </div>
-                </div>
+            <div id="menu-items" class="hidden absolute w-full h-[90%] rounded-b-lg inset-x-0 bottom-0">
 
-                <div class="grid grid-row-6 h-full">
-                    <div class="">
-                        <p>Lorem, ipsum.</p>
+
+                <div class="flex justify-center items-center overflow-hidden h-full relative">
+
+                    <div id="items" class="hidden grid grid-row-6 bg-[#e87d85] h-full w-full text-center justify-center items-center text-white text-sm">
+                        <div class="">
+                            <p>ACCESORIOS</p>
+                        </div>
+                        <div class="">
+                            <p>ROSTRO</p>
+                        </div>
+                        <div class="">
+                            <p>LABIOS</p>
+                        </div>
+                        <div class="">
+                            <p>OJOS</p>
+                        </div>
+                        <div class="">
+                            <p>CONTACTO</p>
+                        </div>
+                        <div class="">
+                            <p>MI CUENTA</p>
+                        </div>
                     </div>
-                    <div class="">
-                        <p>Illo, nobis!</p>
-                    </div>
-                    <div class="">
-                        <p>Asperiores, accusantium.</p>
-                    </div>
-                    <div class="">
-                        <p>Optio, nesciunt.</p>
-                    </div>
-                    <div class="">
-                        <p>Dolorem, voluptatem.</p>
-                    </div>
-                    <div class="">
-                        <p>Rem, dolorem.</p>
-                    </div>
+
+                    <svg id="blobmaker" class="w-20" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">  
+                    </svg>
+
                 </div>
             </div>
         </div>
     </div>
 </body>
+<script src="./js/index.js"></script>
 
 </html>

@@ -1,5 +1,8 @@
 const menuItems = document.getElementById('menu-items');
 const blobMaker = document.getElementById('blobmaker');
+const items = document.getElementById('items');
+const back = document.getElementById('back');
+const containerMenu = document.getElementById('container-menu');
 const designList = [
     '<path fill="#e87d85" d="M20.6,-40.9C23.5,-33.9,20.5,-22,20.1,-14.4C19.7,-6.7,21.9,-3.4,31.1,5.3C40.3,14,56.5,28,55.1,32.5C53.7,36.9,34.6,31.9,22.4,27.4C10.3,23,5.2,19.2,-4.8,27.5C-14.7,35.8,-29.5,56.2,-41.6,60.6C-53.7,65,-63.3,53.5,-68.5,40.8C-73.8,28,-74.7,14,-64.1,6.1C-53.6,-1.8,-31.5,-3.7,-21.7,-8.5C-11.9,-13.3,-14.3,-21,-12.7,-28.7C-11.1,-36.4,-5.5,-44.1,1.6,-46.9C8.8,-49.7,17.6,-47.8,20.6,-40.9Z" transform="translate(100 100)" />',
     '<path fill="#e87d85" d="M28.8,-56C33.8,-46.9,31.9,-32.1,40.6,-21.8C49.3,-11.6,68.6,-5.8,75.2,3.8C81.8,13.4,75.8,26.9,68.2,39.1C60.7,51.4,51.6,62.5,40,61C28.3,59.5,14.2,45.4,3.5,39.4C-7.2,33.4,-14.5,35.5,-16.7,31.6C-18.9,27.6,-16,17.6,-25.5,11.4C-35,5.1,-56.8,2.5,-69,-7.1C-81.2,-16.6,-83.9,-33.3,-72.2,-35.8C-60.6,-38.3,-34.6,-26.7,-20.2,-30.3C-5.8,-34,-2.9,-52.9,4.5,-60.7C11.9,-68.4,23.7,-65.1,28.8,-56Z" transform="translate(100 100)" />',
@@ -12,24 +15,47 @@ const designList = [
     '<path fill="#e87d85" d="M44,-75.7C57.9,-68.1,70.8,-58.2,79.1,-45.2C87.4,-32.2,91.2,-16.1,89.9,-0.7C88.7,14.7,82.4,29.3,74.2,42.5C66,55.7,55.8,67.4,43.1,74.9C30.4,82.4,15.2,85.8,-0.3,86.3C-15.8,86.9,-31.7,84.6,-45.4,77.6C-59.1,70.7,-70.8,59.1,-79.4,45.4C-88.1,31.7,-93.9,15.9,-93.3,0.3C-92.8,-15.2,-85.9,-30.4,-77.3,-44.3C-68.7,-58.1,-58.4,-70.7,-45.2,-78.7C-32,-86.8,-16,-90.3,-0.5,-89.4C15,-88.6,30,-83.3,44,-75.7Z" transform="translate(100 100)" />'
 ];
 
-const renderBlobMaker = () => {
+const deleteMenuStyles = ()=>{
+    const inputElement = containerMenu.querySelector('input[type="checkbox"]');
+    back.classList.add('hidden');
+    menuItems.classList.add('hidden')
+    containerMenu.classList.remove('hidden');
+    blobMaker.classList.remove('hidden');
+    items.classList.add('hidden')
+    blobMaker.style.transform = '';
+    if (inputElement.checked) {
+        inputElement.checked = false;
+    }
+
+};
+
+
+const renderBlobMaker = (label) => {
+    const contenedorMenu = label.target.parentElement;
+    
+    
     let index = 0;
     if(blobMaker.style.transform){
         blobMaker.style.transform = '';
     }
     const renderNextShape = () => {
+
         if (index < designList.length) {
             blobMaker.innerHTML = designList[index];
             index++;
             if(index==9){
-                blobMaker.style.transition = "1s ease all";
-                blobMaker.style.transform ="scale(5)";
+                blobMaker.style.transition = "1.5s ease all";
+                blobMaker.style.transform ="scale(105)";
+                setTimeout(()=>{
+                    blobMaker.classList.add('hidden');
+                    contenedorMenu.classList.add('hidden');
+                    back.classList.remove('hidden');
+                    items.classList.remove('hidden');
+                },150);
             }
-            setTimeout(renderNextShape, 100); // Llama a renderNextShape() nuevamente después de 1 segundo
+            setTimeout(renderNextShape, 150); // Llama a renderNextShape() nuevamente después de 1 segundo
         }
     };
-
-
     renderNextShape(); // Inicia la animación llamando a renderNextShape() por primera vez
 };
 
@@ -38,10 +64,16 @@ const displayMenu = (e) => {
     if (hamburgerMenu != "checkbox") return;
     if (menuItems.classList.contains('hidden')) {
         menuItems.classList.remove('hidden');
-        renderBlobMaker();
-    } else {
-        menuItems.classList.add('hidden');
-    };
+        renderBlobMaker(e);
+    }
 }
 
+const closeMenu = (e) => {
+    const backMenu = e.target.id;
+    if(backMenu != 'icon-back') return;
+    deleteMenuStyles();
+}
+
+
 window.addEventListener('click', displayMenu, false);
+window.addEventListener('click', closeMenu, false);
