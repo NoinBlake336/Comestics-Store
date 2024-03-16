@@ -16,7 +16,7 @@
 
 <body>
     <div class="w-screen h-screen bg-gradient-to-t from-[#b96d73] to-[#cf656d] flex justify-center items-center">
-        <div class="w-full h-full bg-[#f3d4d2]  grid grid-rows-[50px_minmax(150px,1fr)] rounded-md relative md:w-11/12 h-[95%]">
+        <div class="w-full h-full bg-white  grid grid-rows-[50px_minmax(150px,1fr)] rounded-md relative">
             <div class="grid grid-cols-[100px_minmax(100px,1fr)] md:pl-8 relative">
                 <figure class="w-full ">
                     <img src="./img/Mesa de trabajo 1.png" alt="">
@@ -56,13 +56,16 @@
                     <div class="">
                         <a class="hover:text-[#cf656d] duration-200 cursor-pointer">CONTACTO</a>
                     </div>
-                    <div class="">
-                        <a class="hover:text-[#cf656d] duration-200 cursor-pointer">MI CUENTA</a>
-                    </div>
                     <div>
                         <a href="" class="cursor-pointer">
                             <i class="fa-solid fa-bag-shopping text-[#cf656d] text-xl"></i>
                         </a>
+                    </div>
+                    <div class="">
+                        <button class="relative flex items-center ring-2 ring-slate-900/10 rounded-lg shadow-sm p-2 text-[#cf656d] font-semibold dark:bg-[#cf656d] dark:ring-0 dark:highlight-white/5 dark:text-[#f3d4d2]">
+                            <i class="fa-solid fa-right-to-bracket text-[#f3d4d2] pr-3" aria-hidden="true"></i>
+                            Iniciar Sesion
+                        </button>
                     </div>
 
                 </div>
@@ -91,49 +94,35 @@
                                     class="hover:text-sky-500 dark:hover:text-[#fcf4f4]">CONTACTO</a></li>
                         </ul>
                         <div class="mt-6 pt-6 border-t border-slate-200 dark:border-slate-200/10">
-                            <div class="flex items-center justify-between text-sm">
+                            <div class="flex items-center justify-between">
                                 <a href="#"class="hover:text-sky-500 dark:hover:text-[#fcf4f4]">Mis Compras</a>
                                 <button class="relative flex items-center ring-2 ring-slate-900/10 rounded-lg shadow-sm p-2 text-[#cf656d] font-semibold dark:bg-[#f3d4d2] dark:ring-0 dark:highlight-white/5 dark:text-[#cf656d]">
                                     <i class="fa-solid fa-right-to-bracket text-[#cf656d] pr-3" aria-hidden="true"></i>
-                                    Iniciar Sesion 
+                                    Iniciar Sesion
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="flex justify-center items-center flex-col md:grid grid-cols-2 ">
-                <div class="flex justify-center items-center flex-col">
-                    <div class="font-jakarta justify-self-center self-center text-sm font-medium pb-5 md:text-lg ">
-                        <p class="">TIENDA ONLINE DE MAQUILLAJE</p>
+            <div class="flex-grow overflow-y-scroll relative">
+                <div class="max-w-2xl px-6 mx-auto mt-8 md:mt-16 md:mb-12 mb-6">
+                    <div class="md:my-14">
+                        <div class="text-center md:mb-12">
+                            <div class="text-[#dd918c] text-3xl md:text-5xl tracking-tight font-bold  font-display">
+                                Accesorios
+                            </div>
+                            <p class="text-sm text-color-muted md:text-lg mt-6  md:block leading-normal">
+                                Potencia tu creatividad con nuestra gama de accesorios, diseñados para
+                                <br>
+                                facilitar la aplicación y mejorar los resultados de tu maquillaje.
+                            </p>
+                        </div>
                     </div>
-                    <div class="">
-                        <figure class=" w-full h-full">
-                            <img class="w-[200px]" src="./img/1x/letter.png" alt="">
-                        </figure>
-                    </div>
-                    <div class="">
-                        <p class="justify-self-center self-center text-xs p-7 pt-5 text-center md:text-lg pt-0">Compra
-                            facilmente productos de
-                            maquillaje, comesticos y cuidado de la piel favoritos
-                            desde tu casa. Envios a nivel nacional en 24-48hs. </p>
-                    </div>
-                    <div class="justify-self-center self-center">
-                        <button class="items-center ring-2 ring-slate-900/10 rounded-lg shadow-sm p-2 text-[#cf656d] font-semibold dark:bg-[#4c2c21] dark:ring-0 dark:highlight-white/5 dark:text-[#f3d4d2] hover:bg-[#cc9f8c] transition">
-                               
-                               Ver Colección
-                        </button>
-                    </div>
-                </div>
-                <div class="hidden md:block w-full h-full">
-                    <figure class="h-full">
-                        <img src="./img/mujer-negra-labios-rosa-claro-enviando-beso_x4.png" alt=""
-                            class="h-full object-cover">
-                    </figure>
                 </div>
             </div>
-
         </div>
+
     </div>
 </body>
 <script src="./js/index.js"></script>

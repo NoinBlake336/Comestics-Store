@@ -1,8 +1,10 @@
 *{
-    font-family: "Manrope", sans-serif;
+    font-family: Inter,sans-serif;
 }
 
-
+.font-jakarta{
+  font-family: Plus Jakarta Sans,sans-serif !important;
+}
 
 .menu {
     --color: #e87d85; 
