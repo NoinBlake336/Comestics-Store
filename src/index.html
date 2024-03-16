@@ -15,21 +15,19 @@
 
 <body>
     <div class="w-screen h-screen bg-gradient-to-t from-[#b96d73] to-[#cf656d] flex justify-center items-center">
-        <div class="w-4/5 h-4/5 bg-[#f3d4d2]  grid grid-rows-[50px_minmax(150px,1fr)] rounded-md relative md:w-11/12 h-[95%]">
-            <div class="grid grid-cols-[100px_minmax(100px,1fr)] z-3">
-                <figure class="w-full">
+        <div
+            class="w-full h-full bg-[#f3d4d2]  grid grid-rows-[50px_minmax(150px,1fr)] rounded-md relative md:w-11/12 h-[95%]">
+            <div class="grid grid-cols-[100px_minmax(100px,1fr)] md:pl-8 relative">
+                <figure class="w-full ">
                     <img src="./img/Mesa de trabajo 1.png" alt="">
                 </figure>
-                <div  class="justify-self-end self-center pr-5 md:hidden">
+                <div class="justify-self-end self-center pr-5 md:hidden">
                     <div id="container-menu" class="menu w-9 rotate-180">
                         <input type="checkbox" />
                         <svg>
                             <use xlink:href="#menu" />
                             <use xlink:href="#menu" />
                         </svg>
-                    </div>
-                    <div id="back" class="hidden text-xl rotate-180 pl-2">
-                        <i id="icon-back" class="fa-solid fa-chevron-left" style="color: #e87d85;"></i>
                     </div>
 
                     <!-- SVG -->
@@ -41,88 +39,100 @@
                     </svg>
                 </div>
 
-                <div class="hidden md:flex justify-end items-center overflow-hidden h-full relative pr-6 gap-5 text-sm">
-                        <div class="">
-                            <p>ACCESORIOS</p>
+                <div
+                    class="hidden md:flex justify-end items-center overflow-hidden h-full relative pr-16 gap-5 text-xs">
+                    <div class="">
+                        <a class="hover:text-[#cf656d] duration-200 cursor-pointer">ACCESORIOS</a>
+                    </div>
+                    <div class="">
+                        <a class="hover:text-[#cf656d] duration-200 cursor-pointer">ROSTRO</a>
+                    </div>
+                    <div class="">
+                        <a class="hover:text-[#cf656d] duration-200 cursor-pointer">LABIOS</a>
+                    </div>
+                    <div class="">
+                        <a class="hover:text-[#cf656d] duration-200 cursor-pointer">OJOS</a>
+                    </div>
+                    <div class="">
+                        <a class="hover:text-[#cf656d] duration-200 cursor-pointer">CONTACTO</a>
+                    </div>
+                    <div class="">
+                        <a class="hover:text-[#cf656d] duration-200 cursor-pointer">MI CUENTA</a>
+                    </div>
+                    <div>
+                        <a href="" class="cursor-pointer">
+                            <i class="fa-solid fa-bag-shopping text-[#cf656d] text-xl"></i>
+                        </a>
+                    </div>
+
+                </div>
+                 <!-- MENU CARD -->
+                <div class="absolute z-50 hidden inset-0 md:hidden" id="menu-items" role="dialog" aria-modal="true"
+                    data-headlessui-state="open">
+                    <div class="fixed inset-0 bg-black/20 backdrop-blur-sm dark:bg-[#f3d4d2]/50"
+                        id="headlessui-dialog-overlay-:r7:" aria-hidden="true" data-headlessui-state="open"></div>
+                    <div
+                        class="fixed top-4 right-3 w-11/12 max-w-xs bg-white rounded-lg shadow-lg p-7 text-base font-semibold  dark:bg-[#cf656d] dark:text-[#f3d4d2] dark:highlight-white/5">
+                        <button type="button" 
+                            class="absolute top-5 right-5 w-8 h-8 flex items-center justify-center text-slate-500 hover:text-slate-600 dark:hover:text-slate-300"
+                            tabindex="0"><span class="sr-only">Close navigation</span><svg id="icon-back" viewBox="0 0 10 10"
+                                class="w-2.5 h-2.5 overflow-visible text-[#f3d4d2] dark:hover:text-[#fcf4f4]" aria-hidden="true">
+                                <path id="icon-back" d="M0 0L10 10M10 0L0 10" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round"></path>
+                            </svg></button>
+                        <ul class="space-y-6">
+                            <li><a class="hover:text-sky-500 dark:hover:text-[#fcf4f4]" href="#">ACCESORIOS</a>
+                            </li>
+                            <li><a href="#"
+                                    class="hover:text-sky-500 dark:hover:text-[#fcf4f4]">ROSTRO</a></li>
+                            <li><a class="hover:text-sky-500 dark:hover:text-[#fcf4f4]" href="#">LABIOS</a></li>
+                            <li><a class="hover:text-sky-500 dark:hover:text-[#fcf4f4]" href="#">OJOS</a></li>
+                            <li><a href="#"
+                                    class="hover:text-sky-500 dark:hover:text-[#fcf4f4]">CONTACTO</a></li>
+                        </ul>
+                        <div class="mt-6 pt-6 border-t border-slate-200 dark:border-slate-200/10">
+                            <div class="flex items-center justify-between">
+                                <a href="#"class="hover:text-sky-500 dark:hover:text-[#fcf4f4]">Mis Compras</a>
+                                <button class="relative flex items-center ring-2 ring-slate-900/10 rounded-lg shadow-sm p-2 text-[#cf656d] font-semibold dark:bg-[#f3d4d2] dark:ring-0 dark:highlight-white/5 dark:text-[#cf656d]">
+                                    <i class="fa-solid fa-right-to-bracket text-[#cf656d] pr-3" aria-hidden="true"></i>
+                                    Sign in 
+                                </button>
+                            </div>
                         </div>
-                        <div class="">
-                            <p>ROSTRO</p>
-                        </div>
-                        <div class="">
-                            <p>LABIOS</p>
-                        </div>
-                        <div class="">
-                            <p>OJOS</p>
-                        </div>
-                        <div class="">
-                            <p>CONTACTO</p>
-                        </div>
-                        <div class="">
-                            <p>MI CUENTA</p>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-bag-shopping" style="color: #000000;"></i>
-                        </div>
-                
+                    </div>
                 </div>
             </div>
             <div class="flex justify-center items-center flex-col md:grid grid-cols-2 ">
                 <div class="flex justify-center items-center flex-col">
-                    <div class="justify-self-center self-center text-sm font-medium md:text-xl ">
+                    <div class="justify-self-center self-center text-sm font-medium pb-5 md:text-xl ">
                         <p class="">TIENDA ONLINE DE MAQUILLAJE</p>
                     </div>
                     <div class="">
                         <figure class=" w-full h-full">
-                            <img class="w-[400px]" src="./img/1x/letter.png" alt="">
+                            <img class="w-[200px]" src="./img/1x/letter.png" alt="">
                         </figure>
                     </div>
                     <div class="">
-                        <p class="justify-self-center self-center text-xs p-7 text-center md:text-lg">Compra facilmente productos de
+                        <p class="justify-self-center self-center text-xs p-7 pt-5 text-center md:text-lg pt-0">Compra
+                            facilmente productos de
                             maquillaje, comesticos y cuidado de la piel favoritos
                             desde tu casa. Envios a nivel nacional en 24-48hs. </p>
                     </div>
                     <div class="justify-self-center self-center">
-                        <button class="bg-[#333232] text-white p-2 text-sm rounded-md hover:bg-[#cf656d] transition">Ver colección</button>
+                        <button class="items-center ring-2 ring-slate-900/10 rounded-lg shadow-sm p-2 text-[#cf656d] font-semibold dark:bg-[#4c2c21] dark:ring-0 dark:highlight-white/5 dark:text-[#f3d4d2] hover:bg-[#cc9f8c] transition">
+                               
+                               Ver Colección
+                        </button>
                     </div>
                 </div>
                 <div class="hidden md:block w-full h-full">
                     <figure class="h-full">
-                        <img src="./img/mujer-negra-labios-rosa-claro-enviando-beso_x4.png" alt="" class="h-full object-cover">
+                        <img src="./img/mujer-negra-labios-rosa-claro-enviando-beso_x4.png" alt=""
+                            class="h-full object-cover">
                     </figure>
                 </div>
             </div>
 
-            <div id="menu-items" class="hidden absolute w-full h-[90%] rounded-b-lg inset-x-0 bottom-0">
-
-
-                <div class="flex justify-center items-center overflow-hidden h-full relative">
-
-                    <div id="items" class="hidden grid grid-row-6 bg-[#e87d85] h-full w-full text-center justify-center items-center text-white text-sm">
-                        <div class="">
-                            <p>ACCESORIOS</p>
-                        </div>
-                        <div class="">
-                            <p>ROSTRO</p>
-                        </div>
-                        <div class="">
-                            <p>LABIOS</p>
-                        </div>
-                        <div class="">
-                            <p>OJOS</p>
-                        </div>
-                        <div class="">
-                            <p>CONTACTO</p>
-                        </div>
-                        <div class="">
-                            <p>MI CUENTA</p>
-                        </div>
-                    </div>
-
-                    <svg id="blobmaker" class="w-20" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">  
-                    </svg>
-
-                </div>
-            </div>
         </div>
     </div>
 </body>
