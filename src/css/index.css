@@ -59,6 +59,70 @@
   }
 
 
+/* Estilos base para todos los navegadores */
+input[type=range] {
+  --tw-shadow: inset 0 2px 4px 0 rgba(0,0,0,.05);
+  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
+  -webkit-appearance: none;
+  border: 1px solid #d4d4d8;
+  border: 1px solid var(--input-border-color);
+  border-radius: 9999px;
+  box-shadow: 0 0 #0000, 0 0 #0000, inset 0 2px 4px 0 rgba(0,0,0,.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);
+  outline: none;
+}
+
+/* Estilos para el "pulgar" en WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #dd918c;
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  background: #f8e9e8;
+  cursor: pointer;
+  margin-top: -2px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  z-index: 1;
+  position: relative; /* Añadimos posición relativa */
+}
+
+/* Agregamos un punto en el centro del pulgar */
+input[type=range]::-webkit-slider-thumb::after {
+  content: "•"; /* Punto central */
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px; /* Tamaño del punto (ajusta según tus necesidades) */
+  color: blue; /* Color del punto */
+  z-index: 2; /* Asegura que el punto esté por encima del pulgar */
+}
+
+
+/* Estilos similares para Firefox e IE */
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  background: #000000; /* Cambia el color del pulgar a negro */
+  cursor: pointer;
+}
+
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background: #000000; /* Cambia el color del pulgar a negro */
+  cursor: pointer;
+}
+
+
   
   @keyframes stroke-animation {
     0% {

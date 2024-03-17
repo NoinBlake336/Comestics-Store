@@ -23,27 +23,22 @@
                 </figure>
                 <div class="justify-self-end self-center pr-5 md:hidden">
                     <div id="container-menu" class="menu w-9 rotate-180">
-                        <input type="checkbox" />
+                        <input type="checkbox">
                         <svg>
-                            <use xlink:href="#menu" />
-                            <use xlink:href="#menu" />
+                            <use xlink:href="#menu"></use>
+                            <use xlink:href="#menu"></use>
                         </svg>
                     </div>
 
                     <!-- SVG -->
                     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
                         <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 56" id="menu">
-                            <path
-                                d="M48.33,45.6H18a14.17,14.17,0,0,1,0-28.34H78.86a17.37,17.37,0,0,1,0,34.74H42.33l-21-21.26L47.75,4" />
+                            <path d="M48.33,45.6H18a14.17,14.17,0,0,1,0-28.34H78.86a17.37,17.37,0,0,1,0,34.74H42.33l-21-21.26L47.75,4"></path>
                         </symbol>
                     </svg>
                 </div>
 
-                <div
-                    class="hidden md:flex justify-end items-center overflow-hidden h-full relative pr-16 gap-5 text-xs">
-                    <div class="">
-                        <a class="hover:text-[#cf656d] duration-200 cursor-pointer">ACCESORIOS</a>
-                    </div>
+                <div class="hidden md:flex justify-end items-center overflow-hidden h-full relative pr-16 gap-5 text-xs">
                     <div class="">
                         <a class="hover:text-[#cf656d] duration-200 cursor-pointer">ROSTRO</a>
                     </div>
@@ -56,46 +51,40 @@
                     <div class="">
                         <a class="hover:text-[#cf656d] duration-200 cursor-pointer">CONTACTO</a>
                     </div>
-                    <div class="">
-                        <a class="hover:text-[#cf656d] duration-200 cursor-pointer">MI CUENTA</a>
-                    </div>
                     <div>
                         <a href="" class="cursor-pointer">
-                            <i class="fa-solid fa-bag-shopping text-[#cf656d] text-xl"></i>
+                            <i class="fa-solid fa-bag-shopping text-[#cf656d] text-xl" aria-hidden="true"></i>
                         </a>
+                    </div>
+                    <div class="">
+                        <button class="relative flex items-center ring-2 ring-slate-900/10 rounded-lg shadow-sm p-2 text-[#cf656d] font-semibold dark:bg-[#cf656d] dark:ring-0 dark:highlight-white/5 dark:text-[#f3d4d2]">
+                            <i class="fa-solid fa-right-to-bracket text-[#f3d4d2] pr-3" aria-hidden="true"></i>
+                            Iniciar Sesion
+                        </button>
                     </div>
 
                 </div>
-                 <!-- MENU CARD -->
-                <div class="absolute z-50 hidden inset-0 md:hidden" id="menu-items" role="dialog" aria-modal="true"
-                    data-headlessui-state="open">
-                    <div class="fixed inset-0 bg-black/20 backdrop-blur-sm dark:bg-[#f3d4d2]/50"
-                        id="headlessui-dialog-overlay-:r7:" aria-hidden="true" data-headlessui-state="open"></div>
-                    <div
-                        class="fixed top-4 right-3 w-11/12 max-w-xs bg-white rounded-lg shadow-lg p-7 text-base font-semibold  dark:bg-[#cf656d] dark:text-[#f3d4d2] dark:highlight-white/5">
-                        <button type="button" 
-                            class="absolute top-5 right-5 w-8 h-8 flex items-center justify-center text-slate-500 hover:text-slate-600 dark:hover:text-slate-300"
-                            tabindex="0"><span class="sr-only">Close navigation</span><svg id="icon-back" viewBox="0 0 10 10"
-                                class="w-2.5 h-2.5 overflow-visible text-[#f3d4d2] dark:hover:text-[#fcf4f4]" aria-hidden="true">
-                                <path id="icon-back" d="M0 0L10 10M10 0L0 10" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round"></path>
+                <!-- MENU CARD -->
+                <div class="absolute z-50 inset-0 md:hidden hidden" id="menu-items" role="dialog" aria-modal="true" data-headlessui-state="open">
+                    <div class="fixed inset-0 bg-black/20 backdrop-blur-sm dark:bg-[#f3d4d2]/50" id="headlessui-dialog-overlay-:r7:" aria-hidden="true" data-headlessui-state="open"></div>
+                    <div class="fixed top-4 right-3 w-11/12 max-w-xs bg-white rounded-lg shadow-lg p-7 text-base font-semibold  dark:bg-[#cf656d] dark:text-[#f3d4d2] dark:highlight-white/5">
+                        <button type="button" class="absolute top-5 right-5 w-8 h-8 flex items-center justify-center text-slate-500 hover:text-slate-600 dark:hover:text-slate-300" tabindex="0"><span class="sr-only">Close
+                                navigation</span><svg id="icon-back" viewBox="0 0 10 10" class="w-2.5 h-2.5 overflow-visible text-[#f3d4d2] dark:hover:text-[#fcf4f4]" aria-hidden="true">
+                                <path id="icon-back" d="M0 0L10 10M10 0L0 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
                             </svg></button>
                         <ul class="space-y-6">
-                            <li><a class="hover:text-sky-500 dark:hover:text-[#fcf4f4]" href="#">ACCESORIOS</a>
-                            </li>
-                            <li><a href="#"
-                                    class="hover:text-sky-500 dark:hover:text-[#fcf4f4]">ROSTRO</a></li>
+                            <li><a href="#" class="hover:text-sky-500 dark:hover:text-[#fcf4f4]">ROSTRO</a></li>
                             <li><a class="hover:text-sky-500 dark:hover:text-[#fcf4f4]" href="#">LABIOS</a></li>
                             <li><a class="hover:text-sky-500 dark:hover:text-[#fcf4f4]" href="#">OJOS</a></li>
-                            <li><a href="#"
-                                    class="hover:text-sky-500 dark:hover:text-[#fcf4f4]">CONTACTO</a></li>
+                            <li><a href="#" class="hover:text-sky-500 dark:hover:text-[#fcf4f4]">CONTACTO</a></li>
                         </ul>
                         <div class="mt-6 pt-6 border-t border-slate-200 dark:border-slate-200/10">
-                            <div class="flex items-center justify-between text-sm">
-                                <a href="#"class="hover:text-sky-500 dark:hover:text-[#fcf4f4]">Mis Compras</a>
+                            <div class="flex items-center text-sm justify-between">
+                                <a href="#" class="hover:text-sky-500 dark:hover:text-[#fcf4f4]">Mis
+                                    Compras</a>
                                 <button class="relative flex items-center ring-2 ring-slate-900/10 rounded-lg shadow-sm p-2 text-[#cf656d] font-semibold dark:bg-[#f3d4d2] dark:ring-0 dark:highlight-white/5 dark:text-[#cf656d]">
                                     <i class="fa-solid fa-right-to-bracket text-[#cf656d] pr-3" aria-hidden="true"></i>
-                                    Iniciar Sesion 
+                                    Iniciar Sesion
                                 </button>
                             </div>
                         </div>
@@ -132,8 +121,9 @@
                     </figure>
                 </div>
             </div>
-
         </div>
+
+
     </div>
 </body>
 <script src="./js/index.js"></script>
