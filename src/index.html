@@ -7,19 +7,23 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/3c4e7f7fbf.js" crossorigin="anonymous"></script>
 
+    <link rel="icon" href="./img/Logos/logo_1.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
+    <title>Glam Haven</title>
 </head>
 
 <body>
     <div class="w-screen h-screen bg-gradient-to-t from-[#b96d73] to-[#cf656d] flex justify-center items-center">
-        <div class="w-full h-full bg-[#f3d4d2]  grid grid-rows-[50px_minmax(150px,1fr)] rounded-md relative md:w-11/12 h-[95%]">
+        <div class="w-full h-full bg-white  grid grid-rows-[50px_minmax(150px,1fr)] rounded-md relative">
+
+            <!-- NAV -->
             <div class="grid grid-cols-[100px_minmax(100px,1fr)] md:pl-8 relative">
                 <figure class="w-full ">
-                    <img src="./img/Mesa de trabajo 1.png" alt="">
+                    <img id="logo" src="./img/Logos/Logo_2.png" alt="">
                 </figure>
                 <div class="justify-self-end self-center pr-5 md:hidden">
                     <div id="container-menu" class="menu w-9 rotate-180">
@@ -40,16 +44,19 @@
 
                 <div class="hidden md:flex justify-end items-center overflow-hidden h-full relative pr-16 gap-5 text-xs">
                     <div class="">
-                        <a class="hover:text-[#cf656d] duration-200 cursor-pointer">ROSTRO</a>
+                        <a id="products" class="hover:text-[#cf656d] duration-200 cursor-pointer">PRODUCTOS</a>
                     </div>
                     <div class="">
-                        <a class="hover:text-[#cf656d] duration-200 cursor-pointer">LABIOS</a>
+                        <a id="faces" class="hover:text-[#cf656d] duration-200 cursor-pointer">ROSTRO</a>
                     </div>
                     <div class="">
-                        <a class="hover:text-[#cf656d] duration-200 cursor-pointer">OJOS</a>
+                        <a id="lips" class="hover:text-[#cf656d] duration-200 cursor-pointer">LABIOS</a>
                     </div>
                     <div class="">
-                        <a class="hover:text-[#cf656d] duration-200 cursor-pointer">CONTACTO</a>
+                        <a id="eyes" class="hover:text-[#cf656d] duration-200 cursor-pointer">OJOS</a>
+                    </div>
+                    <div class="">
+                        <a id="contact" class="hover:text-[#cf656d] duration-200 cursor-pointer">CONTACTO</a>
                     </div>
                     <div>
                         <a href="" class="cursor-pointer">
@@ -57,7 +64,7 @@
                         </a>
                     </div>
                     <div class="">
-                        <button class="relative flex items-center ring-2 ring-slate-900/10 rounded-lg shadow-sm p-2 text-[#cf656d] font-semibold dark:bg-[#cf656d] dark:ring-0 dark:highlight-white/5 dark:text-[#f3d4d2]">
+                        <button id="sign-in" id="sign-in" class="relative flex items-center ring-2 ring-slate-900/10 rounded-lg shadow-sm p-2 text-[#cf656d] font-semibold dark:bg-[#cf656d] dark:ring-0 dark:highlight-white/5 dark:text-[#f3d4d2]">
                             <i class="fa-solid fa-right-to-bracket text-[#f3d4d2] pr-3" aria-hidden="true"></i>
                             Iniciar Sesion
                         </button>
@@ -65,7 +72,7 @@
 
                 </div>
                 <!-- MENU CARD -->
-                <div class="absolute z-50 inset-0 md:hidden hidden" id="menu-items" role="dialog" aria-modal="true" data-headlessui-state="open">
+                <div class="absolute z-50 hidden inset-0 md:hidden" id="menu-items" role="dialog" aria-modal="true" data-headlessui-state="open">
                     <div class="fixed inset-0 bg-black/20 backdrop-blur-sm dark:bg-[#f3d4d2]/50" id="headlessui-dialog-overlay-:r7:" aria-hidden="true" data-headlessui-state="open"></div>
                     <div class="fixed top-4 right-3 w-11/12 max-w-xs bg-white rounded-lg shadow-lg p-7 text-base font-semibold  dark:bg-[#cf656d] dark:text-[#f3d4d2] dark:highlight-white/5">
                         <button type="button" class="absolute top-5 right-5 w-8 h-8 flex items-center justify-center text-slate-500 hover:text-slate-600 dark:hover:text-slate-300" tabindex="0"><span class="sr-only">Close
@@ -73,16 +80,17 @@
                                 <path id="icon-back" d="M0 0L10 10M10 0L0 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
                             </svg></button>
                         <ul class="space-y-6">
-                            <li><a href="#" class="hover:text-sky-500 dark:hover:text-[#fcf4f4]">ROSTRO</a></li>
-                            <li><a class="hover:text-sky-500 dark:hover:text-[#fcf4f4]" href="#">LABIOS</a></li>
-                            <li><a class="hover:text-sky-500 dark:hover:text-[#fcf4f4]" href="#">OJOS</a></li>
-                            <li><a href="#" class="hover:text-sky-500 dark:hover:text-[#fcf4f4]">CONTACTO</a></li>
+                            <li><a id="products" href="#" class="hover:text-sky-500 dark:hover:text-[#fcf4f4]">PRODUCTOS</a></li>
+                            <li><a id="faces" href="#" class="hover:text-sky-500 dark:hover:text-[#fcf4f4]">ROSTRO</a></li>
+                            <li><a id="lips" class="hover:text-sky-500 dark:hover:text-[#fcf4f4]" href="#">LABIOS</a></li>
+                            <li><a id="eyes" class="hover:text-sky-500 dark:hover:text-[#fcf4f4]" href="#">OJOS</a></li>
+                            <li><a id="contact" href="#" class="hover:text-sky-500 dark:hover:text-[#fcf4f4]">CONTACTO</a></li>
                         </ul>
                         <div class="mt-6 pt-6 border-t border-slate-200 dark:border-slate-200/10">
                             <div class="flex items-center text-sm justify-between">
                                 <a href="#" class="hover:text-sky-500 dark:hover:text-[#fcf4f4]">Mis
                                     Compras</a>
-                                <button class="relative flex items-center ring-2 ring-slate-900/10 rounded-lg shadow-sm p-2 text-[#cf656d] font-semibold dark:bg-[#f3d4d2] dark:ring-0 dark:highlight-white/5 dark:text-[#cf656d]">
+                                <button id="sign-in" class="relative flex items-center ring-2 ring-slate-900/10 rounded-lg shadow-sm p-2 text-[#cf656d] font-semibold dark:bg-[#f3d4d2] dark:ring-0 dark:highlight-white/5 dark:text-[#cf656d]">
                                     <i class="fa-solid fa-right-to-bracket text-[#cf656d] pr-3" aria-hidden="true"></i>
                                     Iniciar Sesion
                                 </button>
@@ -90,10 +98,51 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- SING IN -->
+                <div id="session-card" class="hidden fixed inset-0 bg-backdrop backdrop-filter backdrop-blur-sm z-50 flex items-center justify-center px-6">
+                    <div class="h-auto overflow-hidden rounded-2xl bg-white  shadow-2xl w-full max-w-md">
+                        <div class="h-14 flex items-center px-6">
+                            <div class="cursor-pointer ml-auto text-color-muted">
+                                <svg id="close-session" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path id="close-session" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="p-6 sm:p-14 pt-0 sm:pt-0">
+                            <div class="text-center mb-8">
+                                <div class="text-3xl md:text-5xl tracking-tight font-bold text-[#cf656d] font-display">Sign in</div>
+                                <p class="text-color-muted md:text-lg mt-6 leading-normal">Sign in to save and edit your<br>custom color
+                                    scales.</p>
+                            </div><!--[--><button class="px-6 py-3 rounded-full form-control border w-full flex items-center justify-center space-x-2"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                                    <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+                                    <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+                                    <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"></path>
+                                    <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"></path>
+                                    <path d="M1 1h22v22H1z" fill="none"></path>
+                                </svg><span>Sign in with Google</span></button>
+                            <div class="flex space-x-4 items-center my-6">
+                                <hr class="border border-color-subtle flex-grow">
+                                <div class="text-color-muted uppercase text-sm">or</div>
+                                <hr class="border border-color-subtle flex-grow">
+                            </div>
+                            <form class="space-y-6">
+                                <input class="form-control border px-6 py-3 w-full rounded-full" type="email" placeholder="Enter your email" value="" autocomplete="email">
+                                <input class="form-control border px-6 py-3 w-full rounded-full" type="password" placeholder="Enter your password" value="" autocomplete="contraseña">
+                                <input type="submit" class="px-6 py-3 rounded-full bg-primary-button text-white w-full" value="Send a magic link">                                
+                            </form>
+                            <div class="flex justify-center mt-8"><p class="text-color-muted-extra text-sm">Glam Haven</p></div><!--]-->
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="flex justify-center items-center flex-col md:grid grid-cols-2 ">
+            <!-- /NAV -->
+
+            <!-- MAIN -->
+            <div id="main" class="flex justify-center items-center flex-col md:grid grid-cols-2 ">
                 <div class="flex justify-center items-center flex-col">
-                    <div class="font-jakarta justify-self-center self-center text-sm font-medium pb-5 md:text-lg ">
+                    <div class="font-jakarta justify-self-center self-center text-md font-medium pb-5 md:text-lg text-black md:text-[#dd918c]">
                         <p class="">TIENDA ONLINE DE MAQUILLAJE</p>
                     </div>
                     <div class="">
@@ -108,24 +157,231 @@
                             desde tu casa. Envios a nivel nacional en 24-48hs. </p>
                     </div>
                     <div class="justify-self-center self-center">
-                        <button class="items-center ring-2 ring-slate-900/10 rounded-lg shadow-sm p-2 text-[#cf656d] font-semibold dark:bg-[#4c2c21] dark:ring-0 dark:highlight-white/5 dark:text-[#f3d4d2] hover:bg-[#cc9f8c] transition">
-                               
+                        <button class="relative flex items-center ring-2 ring-slate-900/10 rounded-lg shadow-sm p-2 text-[#cf656d] font-semibold dark:bg-[#cf656d] dark:ring-0 dark:highlight-white/5 dark:text-[#f3d4d2]">
                                Ver Colección
                         </button>
                     </div>
                 </div>
                 <div class="hidden md:block w-full h-full">
                     <figure class="h-full">
-                        <img src="./img/mujer-negra-labios-rosa-claro-enviando-beso_x4.png" alt=""
-                            class="h-full object-cover">
+                        <img src="./img/mujer-negra-labios-rosa-claro-enviando-beso_x4.png" alt="" class="h-full object-cover">
                     </figure>
                 </div>
             </div>
+            <!-- /MAIN -->
+
+            <!-- CATEGORIES -->
+            <div id="categories" class="hidden flex-grow overflow-y-scroll relative">
+                <div class="max-w-2xl px-6 mx-auto mt-8 md:mt-16 md:mb-12 mb-6">
+                    <div class="md:my-14">
+                        <div class="text-center md:mb-12">
+                            <div id="category-name" class="text-[#dd918c] text-3xl md:text-5xl tracking-tight font-bold  font-display">
+                            </div>
+                            <p id="category-description"  class="text-md text-color-muted md:text-lg mt-6  md:block leading-normal">
+                            </p>
+                        </div>
+                        <div class="max-w-md mx-auto">
+                            <div class="md:relative h-14 fixed left-4 right-4 bottom-6 z-40 md:inset-0 form-control border border-color rounded-full overflow-hidden"
+                                style="box-shadow:rgb(0 0 0 / 8%) 0px 1px 2px, rgb(0 0 0 / 5%) 0px 4px 12px;">
+                                <input type="text" name="Rostro" id
+                                    class="px-6 pl-14 w-full font-medium h-full rounded-full bg-white">
+                                <button
+                                    class="absolute form-control border top-1/2 transform -translate-y-1/2 rounded-full px-3 py-1.5 right-4 cursor-pointer md:hidden">Buscar</button>
+                                <button
+                                    class="absolute top-1/2 transform -translate-y-1/2 px-3 py-1.5 right-3 cursor-pointer text-sm hidden md:flex items-center gap-1 font-medium">
+                                    Buscar
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"></path>
+                                    </svg>
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-5xl px-6 pb-12 mx-auto space-y-8">
+                                        <!-- PRODUCTS CARD -->
+                    <div class="mt-12">
+                        <div id="title" class="text-lg font-medium text-color mb-4"></div>
+                        <div class="space-y-8 sm:space-y-0 sm:grid sm:grid-cols-2 md:grid-cols-3 gap-8 mt-4">
+                            <!-- QUATITY OF PRODUCTS -->
+                            <div class="card-shadow rounded-2xl h-96 border card-border-color overflow-hidden flex flex-col relative text-color"
+                                style="background-color: rgb(184, 81, 74); border-color: rgb(184, 81, 74); box-shadow: rgba(255, 255, 255, 0.15) 0px 4px 4px -2px inset;">
+                                <div class="absolute top-1/3 -left-32 -translate-y-1/2 rounded-full w-80 h-80 blur-3xl mix-blend"
+                                    style="background-color: rgb(205, 108, 102);"></div>
+                                <div class="absolute -top-56 left-1/2 -translate-x-1/2 rounded-full w-96 h-96 blur-3xl mix-blend"
+                                    style="background-color: rgb(221, 145, 140);"></div>
+                                <div class="absolute top-36 left-6">
+                                    <div class="flex items-start">
+                                        <div class="text-6xl font-normal tracking-tighter"
+                                            style="color: rgb(255, 255, 255);">1.553</div><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                            class="w-8 h-8 ml-3" style="color: rgb(243, 212, 210);">
+                                            <path fill-rule="evenodd"
+                                                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="mt-4" style="color: rgb(255, 255, 255);">
+                                        Productos en nuestra tienda.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CATEGORY CARD -->
+                            <div id="card-category" class="flex w-full flex-col items-center justify-center card-shadow rounded-2xl border overflow-hidden card-background-color card-border-color">
+                                <div class="p-4 w-full flex justify-center">
+                                    <div>
+                                        <div class="font-medium">
+                                            Otras gamas
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full p-4 pt-0 overflow-y-scroll">
+                                    <div class="space-y-4 w-full">
+                                        <div class="w-full border text-center py-2 px-6 rounded-lg button-shadow"
+                                            style="color: rgb(214, 103, 93); border-color: rgb(214, 103, 93);">En crema
+                                        </div>
+                                        <div class="w-full border text-center py-2 px-6 rounded-lg button-shadow"
+                                            style="color: rgb(196, 84, 74); border-color: rgb(196, 84, 74);">En gel
+                                        </div>
+                                        <div class="w-full border text-center py-2 px-6 rounded-lg button-shadow"
+                                            style="color: rgb(162, 60, 51); border-color: rgb(162, 60, 51);">En polvo
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CARD -->
+                            <div class="card-shadow rounded-2xl p-2 bg-cover bg-center h-96 relative overflow-hidden"
+                                style="background-image: url(&quot;https://th.bing.com/th/id/R.e21eb2e33fe556817a67e530dc31f2a3?rik=Db%2fwXo4Pk1gJeg&pid=ImgRaw&r=0;);">
+                                <div class="h-full flex">
+                                    <div class="leading-none p-4 rounded-2xl mt-auto mb-2 text-2xl font-semibold tracking-tight text-white border w-full bg-opacity-80 backdrop-filter backdrop-blur-sm"
+                                        style="background-color: rgba(154, 65, 59, 0.8); border-color: rgb(184, 81, 74);"> Create<br> color
+                                        scales<br> in seconds. </div>
+                                </div>
+                            </div>
+
+                            <div class="card-shadow rounded-2xl p-2 bg-cover bg-center h-96 relative overflow-hidden"
+                                style="background-image: url(&quot;https://th.bing.com/th/id/R.e21eb2e33fe556817a67e530dc31f2a3?rik=Db%2fwXo4Pk1gJeg&pid=ImgRaw&r=0;);">
+                                <div class="h-full flex">
+                                    <div class="leading-none p-4 rounded-2xl mt-auto mb-2 text-2xl font-semibold tracking-tight text-white border w-full bg-opacity-80 backdrop-filter backdrop-blur-sm"
+                                        style="background-color: rgba(154, 65, 59, 0.8); border-color: rgb(184, 81, 74);"> Create<br> color
+                                        scales<br> in seconds. </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card-shadow rounded-2xl p-2 bg-cover bg-center h-96 relative overflow-hidden"
+                                style="background-image: url(&quot;https://th.bing.com/th/id/R.e21eb2e33fe556817a67e530dc31f2a3?rik=Db%2fwXo4Pk1gJeg&pid=ImgRaw&r=0;);">
+                                <div class="h-full flex">
+                                    <div class="leading-none p-4 rounded-2xl mt-auto mb-2 text-2xl font-semibold tracking-tight text-white border w-full bg-opacity-80 backdrop-filter backdrop-blur-sm"
+                                        style="background-color: rgba(154, 65, 59, 0.8); border-color: rgb(184, 81, 74);"> Create<br> color
+                                        scales<br> in seconds. </div>
+                                </div>
+                            </div>
+
+                            <div class="card-shadow rounded-2xl p-2 bg-cover bg-center h-96 relative overflow-hidden"
+                                style="background-image: url(&quot;https://th.bing.com/th/id/R.e21eb2e33fe556817a67e530dc31f2a3?rik=Db%2fwXo4Pk1gJeg&pid=ImgRaw&r=0;);">
+                                <div class="h-full flex">
+                                    <div class="leading-none p-4 rounded-2xl mt-auto mb-2 text-2xl font-semibold tracking-tight text-white border w-full bg-opacity-80 backdrop-filter backdrop-blur-sm"
+                                        style="background-color: rgba(154, 65, 59, 0.8); border-color: rgb(184, 81, 74);"> Create<br> color
+                                        scales<br> in seconds. </div>
+                                </div>
+                            </div>                            
+
+                            <div class="card-shadow rounded-2xl p-2 bg-cover bg-center h-96 relative overflow-hidden"
+                                style="background-image: url(&quot;https://th.bing.com/th/id/R.e21eb2e33fe556817a67e530dc31f2a3?rik=Db%2fwXo4Pk1gJeg&pid=ImgRaw&r=0;);">
+                                <div class="h-full flex">
+                                    <div class="leading-none p-4 rounded-2xl mt-auto mb-2 text-2xl font-semibold tracking-tight text-white border w-full bg-opacity-80 backdrop-filter backdrop-blur-sm"
+                                        style="background-color: rgba(154, 65, 59, 0.8); border-color: rgb(184, 81, 74);"> Create<br> color
+                                        scales<br> in seconds. </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+
+
+                    <!-- RECOMENDACIONES -->
+                    <div>
+                        <div class="md:flex items-center mb-4">
+                            <div class="text-xl flex-grow text-color text-center md:text-left">
+                                <p class="text-1lg font-medium text-color mb-4">Tambien te puede interesar</p>
+                            </div>
+                        </div>
+                        <div class="color-family-outline flex gap-5 justify-center items-center flex-col md:flex-row gap-0 overflow-hidden relative md:space-x-1 space-y-1 md:space-y-0 rounded-lg">
+                            <div class="w-[200px] md:w-full rounded-lg p-2 md: flex justify-center flex-col relative">
+                                <div class="card-shadow rounded-2xl p-0 bg-cover bg-center h-[180px] relative overflow-hidden w-[200] md:w-full " style="background-image: url(&quot;https://th.bing.com/th/id/R.e21eb2e33fe556817a67e530dc31f2a3?rik=Db%2fwXo4Pk1gJeg&amp;pid=ImgRaw&amp;r=0;);">
+                                    <div class="absolute inset-0" style="background-image: linear-gradient(transparent 0%, rgb(128, 57, 52) 100%);">
+                                        <div class="h-full flex">
+                                            <div class="leading-none p-6 rounded-2xl mt-auto mb-2 text-lg font-semibold drop-shadow-sm tracking-tight" style="color: rgb(252, 244, 244);"> Create<br> <span style="color: rgb(243, 212, 210);">color
+                                                scales<br></span> in seconds. 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w-[200px] md:w-full rounded-lg p-2 md: flex justify-center flex-col relative">
+                                <div class="card-shadow rounded-2xl p-0 bg-cover bg-center h-[180px] relative overflow-hidden w-[200] md:w-full " style="background-image: url(&quot;https://th.bing.com/th/id/R.e21eb2e33fe556817a67e530dc31f2a3?rik=Db%2fwXo4Pk1gJeg&amp;pid=ImgRaw&amp;r=0;);">
+                                    <div class="absolute inset-0" style="background-image: linear-gradient(transparent 0%, rgb(128, 57, 52) 100%);">
+                                        <div class="h-full flex">
+                                            <div class="leading-none p-6 rounded-2xl mt-auto mb-2 text-lg font-semibold drop-shadow-sm tracking-tight" style="color: rgb(252, 244, 244);"> Create<br> <span style="color: rgb(243, 212, 210);">color
+                                                scales<br></span> in seconds. 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w-[200px] md:w-full rounded-lg p-2 md: flex justify-center flex-col relative">
+                                <div class="card-shadow rounded-2xl p-0 bg-cover bg-center h-[180px] relative overflow-hidden w-[200] md:w-full " style="background-image: url(&quot;https://th.bing.com/th/id/R.e21eb2e33fe556817a67e530dc31f2a3?rik=Db%2fwXo4Pk1gJeg&amp;pid=ImgRaw&amp;r=0;);">
+                                    <div class="absolute inset-0" style="background-image: linear-gradient(transparent 0%, rgb(128, 57, 52) 100%);">
+                                        <div class="h-full flex">
+                                            <div class="leading-none p-6 rounded-2xl mt-auto mb-2 text-lg font-semibold drop-shadow-sm tracking-tight" style="color: rgb(252, 244, 244);"> Create<br> <span style="color: rgb(243, 212, 210);">color
+                                                scales<br></span> in seconds. 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w-[200px] md:w-full rounded-lg p-2 md: flex justify-center flex-col relative">
+                                <div class="card-shadow rounded-2xl p-0 bg-cover bg-center h-[180px] relative overflow-hidden w-[200] md:w-full " style="background-image: url(&quot;https://th.bing.com/th/id/R.e21eb2e33fe556817a67e530dc31f2a3?rik=Db%2fwXo4Pk1gJeg&amp;pid=ImgRaw&amp;r=0;);">
+                                    <div class="absolute inset-0" style="background-image: linear-gradient(transparent 0%, rgb(128, 57, 52) 100%);">
+                                        <div class="h-full flex">
+                                            <div class="leading-none p-6 rounded-2xl mt-auto mb-2 text-lg font-semibold drop-shadow-sm tracking-tight" style="color: rgb(252, 244, 244);"> Create<br> <span style="color: rgb(243, 212, 210);">color
+                                                scales<br></span> in seconds. 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w-[200px] md:w-full rounded-lg p-2 md: flex justify-center flex-col relative">
+                                <div class="card-shadow rounded-2xl p-0 bg-cover bg-center h-[180px] relative overflow-hidden w-[200] md:w-full " style="background-image: url(&quot;https://th.bing.com/th/id/R.e21eb2e33fe556817a67e530dc31f2a3?rik=Db%2fwXo4Pk1gJeg&amp;pid=ImgRaw&amp;r=0;);">
+                                    <div class="absolute inset-0" style="background-image: linear-gradient(transparent 0%, rgb(128, 57, 52) 100%);">
+                                        <div class="h-full flex">
+                                            <div class="leading-none p-6 rounded-2xl mt-auto mb-2 text-lg font-semibold drop-shadow-sm tracking-tight" style="color: rgb(252, 244, 244);"> Create<br> <span style="color: rgb(243, 212, 210);">color
+                                                scales<br></span> in seconds. 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /CATEGORIES -->
         </div>
 
 
     </div>
 </body>
-<script src="./js/index.js"></script>
+<script type="module" src="./js/index.js"></script>
 
 </html>
