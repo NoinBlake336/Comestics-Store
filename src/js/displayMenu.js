@@ -4,7 +4,7 @@ const containerMenu = document.getElementById('container-menu');
 
 const deleteMenuStyles = ()=>{
     const inputElement = containerMenu.querySelector('input[type="checkbox"]');
-    menuItems.classList.add('hidden')
+    menuItems.classList.add('hidden');
     if (inputElement.checked) {
         inputElement.checked = false;
     }
