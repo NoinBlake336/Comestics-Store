@@ -123,6 +123,24 @@ input[type=range]::-ms-thumb {
 }
 
 
+#button-cart{
+  position: relative;
+}
+
+#button-cart::before{
+  content: "0";
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  width: 13px;
+  height: 14px;
+  border-radius: 100%;
+  background-color: rgb(237 212 210);
+  color: #cf656d;
+  font-size: 10px;
+  padding-inline-start: 3.5px;
+}
+
   
   @keyframes stroke-animation {
     0% {
