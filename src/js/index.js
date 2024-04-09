@@ -1,7 +1,7 @@
-import {displayMenu, closeMenu} from './displayMenu.js';
-import {productCategory} from './categories.js';
+import {displayMenu, closeMenu} from './menu/displayMenu.js';
 import { cardSession } from './cardSession.js';
 import {displayShoppingCart} from './shoppingCart.js';
+import { productCategory } from './categories/indexCategories.js';
 
 
 

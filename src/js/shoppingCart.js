@@ -2,7 +2,6 @@ const shoppingCart = document.getElementById('cart');
 const menuItems = document.getElementById('menu-items');
 const inputElement = document.getElementById('container-menu').querySelector('input[type="checkbox"]');
 export const displayShoppingCart = (e) =>{
-    console.log(e.target)
     if(e.target.id == 'openShoppingCart' || e.target.id == 'closeShoppingCart') {
         
         if(e.target.id == 'openShoppingCart'){
