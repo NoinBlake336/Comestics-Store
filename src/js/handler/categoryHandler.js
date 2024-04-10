@@ -19,7 +19,7 @@ export const categoryHandler = async ({name,description,category,secondCategory,
 
     if(secondCategory){
         skeletonCard(secondTarget);
-        const data = await fetchProducts(secondCategory,3);
+        const data = await fetchProducts(secondCategory,4);
         hiddenSkeleton(secondTarget);
         const itemsSecond = data.map(item => {
             idSecondContainerCard.innerHTML += renderProducts(item) 
