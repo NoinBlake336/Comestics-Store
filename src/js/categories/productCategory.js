@@ -1,10 +1,12 @@
 import { hiddenMain } from "../menu/NavFuctions.js";
 import { informationText } from "../menu/NavFuctions.js";
-import { fetchProducts } from "../fetchProducts.js";
-import { skeletonCard} from "../skeleton-loaders/cardSkeleton.js";
+import { fetchProducts } from "../requests/fetchProducts.js";
+import { skeletonCard, skeletonCardRecommendations} from "../skeleton-loaders/cardSkeleton.js";
 import { hiddenSkeleton } from "../skeleton-loaders/hiddenSkeleton.js";
 import { config } from "../config/index.config.js";
-import { moveCarouselRecomendaciones } from "../cart/recommendationCarousel.js";
+import { moveCarouselRecommendations } from "../cart/recommendationCarousel.js";
+import { fetchRecommendations } from "../requests/fetchItemsRecommendations.js";
+
 
 
 
@@ -26,11 +28,14 @@ export const renderProducts = (data) => {
 
 export const drawTheProductsCategory = async () => {
     hiddenMain();
-    moveCarouselRecomendaciones();
+    skeletonCardRecommendations(config.recommedationsContainer);
+    fetchRecommendations();
+    hiddenSkeleton(config.recommedationsContainer)
+    moveCarouselRecommendations();
     skeletonCard(config.containerCard);
     informationText({name:'Productos', description:'Explora nuestra selección de productos de calidad para realzar tu belleza.'});
     config.idCardCategory.classList.add('hidden');
-    let data = await fetchProducts('',2);
+    let data = await fetchProducts({quantity:2});
     hiddenSkeleton(config.containerCard);
     const items = data.map(item => {
         config.containerCard.innerHTML += renderProducts(item);

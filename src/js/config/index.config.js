@@ -27,6 +27,7 @@ const inputElement = document.getElementById('container-menu').querySelector('in
 const recommedationsContainer = document.getElementById('recommendations-container');
 let contRecommendations = 0;
 let toTheRight = false;
+let contItemsRecommendations = 0;
 
 export const config = {
     containerCard: containerCards,
@@ -51,5 +52,6 @@ export const config = {
     inputElement:inputElement,
     recommedationsContainer:recommedationsContainer,
     contRecommendations:contRecommendations,
+    contItemsRecommendations:contItemsRecommendations,
     toTheRight:toTheRight
 };

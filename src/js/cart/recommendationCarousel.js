@@ -3,7 +3,8 @@ import { config } from "../config/index.config.js";
 
 
 
-export const moveCarouselRecomendaciones = ()=> {
+
+export const moveCarouselRecommendations = ()=> {
     setInterval(() => {
         if (!config.toTheRight) {
             config.recommedationsContainer.style.left = `-${config.contRecommendations}px`;
@@ -18,7 +19,7 @@ export const moveCarouselRecomendaciones = ()=> {
                 config.toTheRight = false; 
             }
         }
-    }, 10);
+    }, 13);
 }
 
 

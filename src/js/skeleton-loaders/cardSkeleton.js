@@ -43,4 +43,44 @@ export const skeletonCard = (target) =>{
     </div>
 </div>
 `  
+};
+
+
+export const skeletonCardRecommendations = (target) =>{
+    return target.innerHTML = `
+    <li id="items-recomendations" class="w-[12rem] rounded-lg p-2 absolute animate-pulse">
+        <div class="card-shadow rounded-2xl p-0 bg-cover bg-center h-[180px] relative overflow-hidden w-[200] bg-gray-300 md:w-full ">
+        </div>
+    </li>
+
+    <li id="items-recomendations" class="w-[12rem] rounded-lg p-2 absolute animate-pulse">
+        <div class="card-shadow rounded-2xl p-0 bg-cover bg-center h-[180px] relative overflow-hidden w-[200] bg-gray-300 md:w-full ">
+        </div>
+    </li>
+
+    <li id="items-recomendations" class="w-[12rem] rounded-lg p-2 absolute animate-pulse">
+        <div class="card-shadow rounded-2xl p-0 bg-cover bg-center h-[180px] relative overflow-hidden w-[200] bg-gray-300 md:w-full ">
+        </div>
+    </li>
+
+    <li id="items-recomendations" class="w-[12rem] rounded-lg p-2 absolute animate-pulse">
+        <div class="card-shadow rounded-2xl p-0 bg-cover bg-center h-[180px] relative overflow-hidden w-[200] bg-gray-300 md:w-full ">
+        </div>
+    </li>
+
+    <li id="items-recomendations" class="w-[12rem] rounded-lg p-2 absolute animate-pulse">
+        <div class="card-shadow rounded-2xl p-0 bg-cover bg-center h-[180px] relative overflow-hidden w-[200] bg-gray-300 md:w-full ">
+        </div>
+    </li>
+
+    <li id="items-recomendations" class="w-[12rem] rounded-lg p-2 absolute animate-pulse">
+        <div class="card-shadow rounded-2xl p-0 bg-cover bg-center h-[180px] relative overflow-hidden w-[200] bg-gray-300 md:w-full ">
+        </div>
+    </li>
+
+    <li id="items-recomendations" class="w-[12rem] rounded-lg p-2 absolute animate-pulse">
+        <div class="card-shadow rounded-2xl p-0 bg-cover bg-center h-[180px] relative overflow-hidden w-[200] bg-gray-300 md:w-full ">
+        </div>
+    </li>
+    `
 }
