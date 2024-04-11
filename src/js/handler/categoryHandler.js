@@ -1,5 +1,5 @@
 import { fetchProducts } from "../requests/fetchProducts.js";
-import { skeletonCard } from "../skeleton-loaders/cardSkeleton.js";
+import { skeletonCard, skeletonCardRecommendations } from "../skeleton-loaders/cardSkeleton.js";
 import { hiddenMain, informationText, showCategoryCard } from "../menu/NavFuctions.js";
 import { renderProducts } from "../categories/productCategory.js";
 import { hiddenSkeleton } from "../skeleton-loaders/hiddenSkeleton.js";
@@ -10,6 +10,7 @@ import { moveCarouselRecommendations } from "../cart/recommendationCarousel.js";
 export const categoryHandler = async ({name,description,category,secondCategory, nameProducts, secondNameProduct,target,secondTarget})=>{
     hiddenMain();
     moveCarouselRecommendations();
+    skeletonCard(config.containerCard);
     informationText({name:name,description:description,nameProducts:nameProducts, secondNameProduct:secondNameProduct});
     showCategoryCard();
     skeletonCard(target);

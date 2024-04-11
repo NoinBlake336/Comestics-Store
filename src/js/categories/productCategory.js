@@ -30,7 +30,6 @@ export const drawTheProductsCategory = async () => {
     hiddenMain();
     skeletonCardRecommendations(config.recommedationsContainer);
     fetchRecommendations();
-    hiddenSkeleton(config.recommedationsContainer)
     moveCarouselRecommendations();
     skeletonCard(config.containerCard);
     informationText({name:'Productos', description:'Explora nuestra selección de productos de calidad para realzar tu belleza.'});

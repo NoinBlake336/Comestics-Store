@@ -54,32 +54,37 @@ export const skeletonCardRecommendations = (target) =>{
     </li>
 
     <li id="items-recomendations" class="w-[12rem] rounded-lg p-2 absolute animate-pulse">
-        <div class="card-shadow rounded-2xl p-0 bg-cover bg-center h-[180px] relative overflow-hidden w-[200] bg-gray-300 md:w-full ">
+        <div class="card-shadow rounded-2xl p-0 bg-cover bg-center h-[180px] relative overflow-hidden w-[200] inset-x-[180px] bg-gray-300 md:w-full ">
         </div>
     </li>
 
     <li id="items-recomendations" class="w-[12rem] rounded-lg p-2 absolute animate-pulse">
-        <div class="card-shadow rounded-2xl p-0 bg-cover bg-center h-[180px] relative overflow-hidden w-[200] bg-gray-300 md:w-full ">
+        <div class="card-shadow rounded-2xl p-0 bg-cover bg-center h-[180px] relative overflow-hidden w-[200] inset-x-[365px] bg-gray-300 md:w-full ">
         </div>
     </li>
 
     <li id="items-recomendations" class="w-[12rem] rounded-lg p-2 absolute animate-pulse">
-        <div class="card-shadow rounded-2xl p-0 bg-cover bg-center h-[180px] relative overflow-hidden w-[200] bg-gray-300 md:w-full ">
+        <div class="card-shadow rounded-2xl p-0 bg-cover bg-center h-[180px] relative overflow-hidden w-[200] inset-x-[550px] bg-gray-300 md:w-full ">
         </div>
     </li>
 
     <li id="items-recomendations" class="w-[12rem] rounded-lg p-2 absolute animate-pulse">
-        <div class="card-shadow rounded-2xl p-0 bg-cover bg-center h-[180px] relative overflow-hidden w-[200] bg-gray-300 md:w-full ">
+        <div class="card-shadow rounded-2xl p-0 bg-cover bg-center h-[180px] relative overflow-hidden w-[200] inset-x-[735px] bg-gray-300 md:w-full ">
         </div>
     </li>
 
     <li id="items-recomendations" class="w-[12rem] rounded-lg p-2 absolute animate-pulse">
-        <div class="card-shadow rounded-2xl p-0 bg-cover bg-center h-[180px] relative overflow-hidden w-[200] bg-gray-300 md:w-full ">
+        <div class="card-shadow rounded-2xl p-0 bg-cover bg-center h-[180px] relative overflow-hidden w-[200] inset-x-[920px] bg-gray-300 md:w-full ">
         </div>
     </li>
 
     <li id="items-recomendations" class="w-[12rem] rounded-lg p-2 absolute animate-pulse">
-        <div class="card-shadow rounded-2xl p-0 bg-cover bg-center h-[180px] relative overflow-hidden w-[200] bg-gray-300 md:w-full ">
+        <div class="card-shadow rounded-2xl p-0 bg-cover bg-center h-[180px] relative overflow-hidden w-[200] inset-x-[1105px] bg-gray-300 md:w-full ">
+        </div>
+    </li>
+
+    <li id="items-recomendations" class="w-[12rem] rounded-lg p-2 absolute animate-pulse">
+        <div class="card-shadow rounded-2xl p-0 bg-cover bg-center h-[180px] relative overflow-hidden w-[200] inset-x-[1290px] bg-gray-300 md:w-full ">
         </div>
     </li>
     `

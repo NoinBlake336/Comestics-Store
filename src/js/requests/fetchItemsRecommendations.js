@@ -1,4 +1,5 @@
 import { config } from "../config/index.config.js";
+import { hiddenSkeleton } from "../skeleton-loaders/hiddenSkeleton.js";
 import { fetchProducts } from "./fetchProducts.js";
 
 
@@ -23,7 +24,12 @@ const renderItemsRecommendations = (data,quantityTarget) =>{
 export const fetchRecommendations = async() =>{
     const data = await fetchProducts({quantity:8});
 
+    hiddenSkeleton(config.recommedationsContainer);
+
     data.map((item)=>{
         config.recommedationsContainer.innerHTML += renderItemsRecommendations(item,config.contItemsRecommendations++);
     });
+
+    
+
 };
