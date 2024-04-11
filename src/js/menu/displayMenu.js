@@ -1,10 +1,10 @@
-const menuItems = document.getElementById('menu-items');
-const containerMenu = document.getElementById('container-menu');
+import { config } from "../config/index.config.js";
+
 
 
 const deleteMenuStyles = ()=>{
-    const inputElement = containerMenu.querySelector('input[type="checkbox"]');
-    menuItems.classList.add('hidden');
+    const inputElement = config.containerMenu.querySelector('input[type="checkbox"]');
+    config.menuItems.classList.add('hidden');
     if (inputElement.checked) {
         inputElement.checked = false;
     }
@@ -16,8 +16,8 @@ const deleteMenuStyles = ()=>{
 export const displayMenu = (e) => {
     const hamburgerMenu = e.target.attributes[0].nodeValue;
     if (hamburgerMenu != "checkbox") return;
-    if (menuItems.classList.contains('hidden')) {
-        menuItems.classList.remove('hidden');
+    if (config.menuItems.classList.contains('hidden')) {
+        config.menuItems.classList.remove('hidden');
     }
 }
 

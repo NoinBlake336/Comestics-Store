@@ -1,0 +1,35 @@
+                            <div class="card-shadow rounded-2xl h-96 border card-border-color overflow-hidden flex flex-col relative text-color" style="background-color: rgb(184, 81, 74); border-color: rgb(184, 81, 74); box-shadow: rgba(255, 255, 255, 0.15) 0px 4px 4px -2px inset;">
+                                <div class="absolute top-1/3 -left-32 -translate-y-1/2 rounded-full w-80 h-80 blur-3xl mix-blend" style="background-color: rgb(205, 108, 102);"></div>
+                                <div class="absolute -top-56 left-1/2 -translate-x-1/2 rounded-full w-96 h-96 blur-3xl mix-blend" style="background-color: rgb(221, 145, 140);"></div>
+                                <div class="absolute top-36 left-6">
+                                    <div class="flex items-start">
+                                        <div id="quantity-products" class="text-6xl font-normal tracking-tighter" style="color: rgb(255, 255, 255);"></div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-8 h-8 ml-3" style="color: rgb(243, 212, 210);">
+                                            <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="mt-4" style="color: rgb(255, 255, 255);">
+                                        Productos en nuestra tienda.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CATEGORY CARD -->
+                            <div id="card-category" class="flex w-full flex-col items-center justify-center card-shadow rounded-2xl border overflow-hidden card-background-color card-border-color">
+                                <div class="p-4 w-full flex justify-center">
+                                    <div>
+                                        <div class="font-medium">
+                                            Otras gamas
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full p-4 pt-0 overflow-y-scroll">
+                                    <div class="space-y-4 w-full">
+                                        <div class="w-full border text-center py-2 px-6 rounded-lg button-shadow" style="color: rgb(214, 103, 93); border-color: rgb(214, 103, 93);">En crema
+                                        </div>
+                                        <div class="w-full border text-center py-2 px-6 rounded-lg button-shadow" style="color: rgb(196, 84, 74); border-color: rgb(196, 84, 74);">En gel
+                                        </div>
+                                        <div class="w-full border text-center py-2 px-6 rounded-lg button-shadow" style="color: rgb(162, 60, 51); border-color: rgb(162, 60, 51);">En polvo
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>

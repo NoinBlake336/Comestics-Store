@@ -1,14 +1,15 @@
-const sessionCard = document.getElementById('session-card');
-const closeSession = document.getElementById('close-session');
-const singin = document.getElementById('sign-in');
+import { config } from "./config/index.config.js";
+
+
+
 export const cardSession = (e)=>{
     const tag = e.target.id;
     if(tag == 'sign-in'){
-        if(sessionCard.classList.contains('hidden')) sessionCard.classList.remove('hidden');
+        if(config.sessionCard.classList.contains('hidden')) config.sessionCard.classList.remove('hidden');
     }
 
     if(tag == 'close-session'){
-        sessionCard.classList.add('hidden')
+        config.sessionCard.classList.add('hidden')
     }
 };
 

@@ -3,11 +3,12 @@ import { informationText } from "../menu/NavFuctions.js";
 import { fetchProducts } from "../fetchProducts.js";
 import { skeletonCard} from "../skeleton-loaders/cardSkeleton.js";
 import { hiddenSkeleton } from "../skeleton-loaders/hiddenSkeleton.js";
+import { config } from "../config/index.config.js";
+import { moveCarouselRecomendaciones } from "../cart/recommendationCarousel.js";
 
 
-export const containerCards = document.getElementById('container-cards');
 
-const idCardCategory = document.getElementById('card-category');
+
 
 
 export const renderProducts = (data) => {
@@ -25,12 +26,13 @@ export const renderProducts = (data) => {
 
 export const drawTheProductsCategory = async () => {
     hiddenMain();
-    skeletonCard(containerCards);
+    moveCarouselRecomendaciones();
+    skeletonCard(config.containerCard);
     informationText({name:'Productos', description:'Explora nuestra selección de productos de calidad para realzar tu belleza.'});
-    idCardCategory.classList.add('hidden');
+    config.idCardCategory.classList.add('hidden');
     let data = await fetchProducts('',2);
-    hiddenSkeleton(containerCards);
+    hiddenSkeleton(config.containerCard);
     const items = data.map(item => {
-        containerCards.innerHTML += renderProducts(item);
+        config.containerCard.innerHTML += renderProducts(item);
     });
 };

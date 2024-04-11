@@ -1,6 +1,6 @@
+import { config } from "../config/index.config.js";
 import { categoryHandler } from "../handler/categoryHandler.js";
-import { idSecondContainerCard } from "../menu/NavFuctions.js";
-import { containerCards } from "./productCategory.js";
+
 
 export const drawTheEyesCategory = () =>{
 
@@ -11,7 +11,7 @@ export const drawTheEyesCategory = () =>{
         secondNameProduct:'Delineador de ojos',
         category:'eyebrow',
         secondCategory:'eyeliner',
-        target:containerCards,
-        secondTarget:idSecondContainerCard,
+        target:config.containerCard,
+        secondTarget:config.secondContainerCard,
     })
 };

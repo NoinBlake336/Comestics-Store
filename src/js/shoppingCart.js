@@ -1,22 +1,22 @@
-const shoppingCart = document.getElementById('cart');
-const menuItems = document.getElementById('menu-items');
-const inputElement = document.getElementById('container-menu').querySelector('input[type="checkbox"]');
+import { config } from "./config/index.config.js";
+
+
 export const displayShoppingCart = (e) =>{
     if(e.target.id == 'openShoppingCart' || e.target.id == 'closeShoppingCart') {
         
         if(e.target.id == 'openShoppingCart'){
-            if(!menuItems.classList.add('hidden')){
-                menuItems.classList.add('hidden');
+            if(!config.menuItems.classList.add('hidden')){
+                config.menuItems.classList.add('hidden');
             }
-            if (inputElement.checked) {
-                inputElement.checked = false;
+            if (config.inputElement.checked) {
+                config.inputElement.checked = false;
             }
-            if(shoppingCart.classList.contains('hidden')){
-                shoppingCart.classList.remove('hidden')
+            if(config.shoppingCart.classList.contains('hidden')){
+                config.shoppingCart.classList.remove('hidden')
             };
         }
         if(e.target.id == "closeShoppingCart"){
-            shoppingCart.classList.add('hidden');
+            config.shoppingCart.classList.add('hidden');
         }
     };
 };
