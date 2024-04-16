@@ -22,7 +22,7 @@ const renderItemsRecommendations = (data,quantityTarget) =>{
 }
 
 export const fetchRecommendations = async() =>{
-    const data = await fetchProducts({quantity:8});
+    const data = await fetchProducts({quantity:14});
 
     hiddenSkeleton(config.recommedationsContainer);
 
