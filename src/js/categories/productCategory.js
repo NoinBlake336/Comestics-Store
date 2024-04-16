@@ -34,7 +34,7 @@ export const drawTheProductsCategory = async () => {
     skeletonCard(config.containerCard);
     informationText({name:'Productos', description:'Explora nuestra selección de productos de calidad para realzar tu belleza.'});
     config.idCardCategory.classList.add('hidden');
-    let data = await fetchProducts({quantity:2});
+    let data = await fetchProducts({quantity:16});
     hiddenSkeleton(config.containerCard);
     const items = data.map(item => {
         config.containerCard.innerHTML += renderProducts(item);

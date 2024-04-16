@@ -14,7 +14,7 @@ export const categoryHandler = async ({name,description,category,secondCategory,
     informationText({name:name,description:description,nameProducts:nameProducts, secondNameProduct:secondNameProduct});
     showCategoryCard();
     skeletonCard(target);
-    const data = await fetchProducts({category:category,quantity:4});
+    const data = await fetchProducts({category:category,quantity:20});
     hiddenSkeleton(target);
     const items = data.map(item => {
         config.containerCard.innerHTML += renderProducts(item);
@@ -22,7 +22,7 @@ export const categoryHandler = async ({name,description,category,secondCategory,
 
     if(secondCategory){
         skeletonCard(secondTarget);
-        const data = await fetchProducts({category:secondCategory,quantity:4});
+        const data = await fetchProducts({category:secondCategory,quantity:20});
         hiddenSkeleton(secondTarget);
         const itemsSecond = data.map(item => {
             config.secondContainerCard.innerHTML += renderProducts(item);
