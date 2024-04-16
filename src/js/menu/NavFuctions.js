@@ -11,6 +11,9 @@ export const hiddenMain = ()=>{
     const inputElement = config.containerMenu.querySelector('input[type="checkbox"]');
     config.menuItems.classList.add('hidden');
     if (inputElement.checked) inputElement.checked = false;
+    if(config.footer.classList.contains('hidden')){
+        config.footer.classList.remove('hidden');
+    }
 };
 
    export const showCategoryCard = ()=>{

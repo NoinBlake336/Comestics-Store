@@ -29,6 +29,9 @@ let contRecommendations = 0;
 let toTheRight = false;
 let contItemsRecommendations = 0;
 
+
+const footerHidden = document.getElementById('footer');
+
 export const config = {
     containerCard: containerCards,
     secondContainerCard:secondContainerCard,
@@ -53,5 +56,6 @@ export const config = {
     recommedationsContainer:recommedationsContainer,
     contRecommendations:contRecommendations,
     contItemsRecommendations:contItemsRecommendations,
-    toTheRight:toTheRight
+    toTheRight:toTheRight,
+    footer: footerHidden,
 };
