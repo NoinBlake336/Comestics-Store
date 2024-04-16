@@ -1,10 +1,12 @@
 import { fetchProducts } from "../requests/fetchProducts.js";
-import { skeletonCard, skeletonCardRecommendations } from "../skeleton-loaders/cardSkeleton.js";
+import { skeletonCard} from "../skeleton-loaders/cardSkeleton.js";
 import { hiddenMain, informationText, showCategoryCard } from "../menu/NavFuctions.js";
-import { renderProducts } from "../categories/productCategory.js";
+
 import { hiddenSkeleton } from "../skeleton-loaders/hiddenSkeleton.js";
 import { config } from "../config/index.config.js";
 import { moveCarouselRecommendations } from "../cart/recommendationCarousel.js";
+import { renderProducts } from "../categories/writeCard.js/writeProducts.js";
+import { productSelection } from "../cart/ProductSelection.js";
 
 
 export const categoryHandler = async ({name,description,category,secondCategory, nameProducts, secondNameProduct,target,secondTarget})=>{
@@ -28,4 +30,7 @@ export const categoryHandler = async ({name,description,category,secondCategory,
             config.secondContainerCard.innerHTML += renderProducts(item);
         });
     }
+
+
+    
 };

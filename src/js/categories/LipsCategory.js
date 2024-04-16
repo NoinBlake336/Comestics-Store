@@ -10,4 +10,5 @@ export const drawTheLipsCategory = async() =>{
         target:config.containerCard,
         secondTarget:config.secondContainerCard,
     });
+    
 }
