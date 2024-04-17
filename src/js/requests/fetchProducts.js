@@ -18,10 +18,9 @@ export const fetchProducts = async ({ category, quantity }) => {
     localStorage.setItem('productList', JSON.stringify(updatedData));
 
     
-    config.quantityProducts.innerHTML = updatedData.length;
-    const products = updatedData.slice(config.loadedProductsCount, config.loadedProductsCount + quantity); // Obtener los siguientes 10 productos
+    // const products = newData.slice(config.loadedProductsCount, config.loadedProductsCount + quantity);
     config.loadedProductsCount += products.length; // Actualizar el contador de productos cargados
-    return products;
+    return newData;
 };
 
 

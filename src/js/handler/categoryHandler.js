@@ -1,5 +1,5 @@
 // Importar funciones y módulos necesarios
-import { fetchProducts } from "../requests/fetchProducts.js"; // Importa la función para obtener productos
+import { fetchProducts, fetchRecommendationsProducts } from "../requests/fetchProducts.js"; // Importa la función para obtener productos
 import { skeletonCard, skeletonCardRecommendations } from "../skeleton-loaders/cardSkeleton.js"; // Importa la función para mostrar el esqueleto de tarjetas
 import { hiddenMain, informationText, showCategoryCard } from "../menu/NavFuctions.js"; // Importa funciones para controlar la visualización de elementos en el menú
 
@@ -7,7 +7,6 @@ import { hiddenSkeleton } from "../skeleton-loaders/hiddenSkeleton.js"; // Impor
 import { config } from "../config/index.config.js"; // Importa la configuración global de la aplicación
 import { moveCarouselRecommendations } from "../cart/moveRecommendationCarousel.js"; // Importa la función para mover el carrusel de recomendaciones
 import { renderProducts } from "../categories/writeCard.js/writeProducts.js"; // Importa la función para renderizar productos en las tarjetas
-import { fetchRecommendations } from "../requests/fetchItemsRecommendations.js";
 
 // Definir la función categoryHandler que maneja la carga y visualización de productos para una categoría específica
 export const categoryHandler = async ({name,description,category,secondCategory, nameProducts, secondNameProduct,target,secondTarget}) => {
@@ -16,7 +15,7 @@ export const categoryHandler = async ({name,description,category,secondCategory,
     // Mostrar el esqueleto de las tarjetas de recomendaciones
     skeletonCardRecommendations(config.recommedationsContainer);
     // Realizar la solicitud para obtener las recomendaciones
-    fetchRecommendations();
+    fetchRecommendationsProducts();
     // Mover el carrusel de recomendaciones
     moveCarouselRecommendations();
     // Mostrar el esqueleto de tarjetas en el contenedor principal de tarjetas
