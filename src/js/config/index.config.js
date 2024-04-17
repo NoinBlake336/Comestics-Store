@@ -18,6 +18,7 @@ const singin = document.getElementById('sign-in');
 
 
 const URL = 'http://makeup-api.herokuapp.com/api/v1/products.json';
+
 const quantityProducts = document.getElementById('quantity-products');
 let loadedProductsCount = 0;
 
@@ -31,6 +32,8 @@ let contItemsRecommendations = 0;
 
 
 const footerHidden = document.getElementById('footer');
+
+const productInformationCard =  document.getElementById('information-product');
 
 export const config = {
     containerCard: containerCards,
@@ -48,7 +51,7 @@ export const config = {
     sessionCard:sessionCard,
     closeSession:closeSession,
     singin:singin,
-    urlFecht:URL,
+    urlFetch:URL,
     quantityProducts:quantityProducts,
     loadedProductsCount:loadedProductsCount,
     shoppingCart:shoppingCart,
@@ -58,4 +61,5 @@ export const config = {
     contItemsRecommendations:contItemsRecommendations,
     toTheRight:toTheRight,
     footer: footerHidden,
+    productInformationCard:productInformationCard,
 };

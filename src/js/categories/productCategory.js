@@ -4,7 +4,7 @@ import { fetchProducts } from "../requests/fetchProducts.js";
 import { skeletonCard, skeletonCardRecommendations} from "../skeleton-loaders/cardSkeleton.js";
 import { hiddenSkeleton } from "../skeleton-loaders/hiddenSkeleton.js";
 import { config } from "../config/index.config.js";
-import { moveCarouselRecommendations } from "../cart/recommendationCarousel.js";
+import { moveCarouselRecommendations } from "../cart/moveRecommendationCarousel.js";
 import { fetchRecommendations } from "../requests/fetchItemsRecommendations.js";
 import { renderProducts } from "./writeCard.js/writeProducts.js";
 

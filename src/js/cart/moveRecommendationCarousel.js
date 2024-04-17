@@ -13,7 +13,7 @@ export const moveCarouselRecommendations = ()=> {
                 config.toTheRight = true; 
             }
         } else {
-            config.contRecommendations--;
+            config.contRecommendations -= 10;
             config.recommedationsContainer.style.left = `${config.contRecommendations}px`;
             if (config.contRecommendations <= 0) {
                 config.toTheRight = false; 

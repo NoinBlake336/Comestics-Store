@@ -4,7 +4,7 @@ import { hiddenMain, informationText, showCategoryCard } from "../menu/NavFuctio
 
 import { hiddenSkeleton } from "../skeleton-loaders/hiddenSkeleton.js";
 import { config } from "../config/index.config.js";
-import { moveCarouselRecommendations } from "../cart/recommendationCarousel.js";
+import { moveCarouselRecommendations } from "../cart/moveRecommendationCarousel.js";
 import { renderProducts } from "../categories/writeCard.js/writeProducts.js";
 import { productSelection } from "../cart/ProductSelection.js";
 
