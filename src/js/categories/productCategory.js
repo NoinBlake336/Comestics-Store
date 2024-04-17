@@ -17,6 +17,7 @@ export const drawTheProductsCategory = async () => {
     skeletonCardRecommendations(config.recommedationsContainer);
     // Realizar la solicitud para obtener las recomendaciones
     fetchRecommendations();
+    
     // Mover el carrusel de recomendaciones
     moveCarouselRecommendations();
     // Mostrar el esqueleto de las tarjetas de productos

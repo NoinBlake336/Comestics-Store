@@ -17,11 +17,12 @@ export const fetchProducts = async ({ category, quantity }) => {
     const updatedData = [...existingData, ...uniqueData];
     localStorage.setItem('productList', JSON.stringify(updatedData));
 
+    // Limitar la cantidad de productos devueltos a 'quantity'
+    const products = newData.slice(0, quantity);
     
-    const products = newData.slice(config.loadedProductsCount, config.loadedProductsCount + quantity);
-    config.loadedProductsCount += products.length; // Actualizar el contador de productos cargados
-    return newData;
+    return products;
 };
+
 
 
 export const fetchRecommendationsProducts = async (quantity) => {
@@ -36,8 +37,7 @@ export const fetchRecommendationsProducts = async (quantity) => {
         // Obtiene los siguientes productos según la cantidad especificada
         const products = data.slice(config.loadedProductsCount, config.loadedProductsCount + quantity);
 
-        // Actualiza el contador de productos cargados
-        config.loadedProductsCount += products.length;
+        
 
         return products;
     } catch (error) {
