@@ -1,3 +1,5 @@
+// Este bloque de código define una serie de constantes y elementos del DOM que se utilizan en la aplicación. 
+// Luego, estos elementos se agrupan en un objeto llamado config, que facilita su acceso y uso en diferentes partes del código
 const containerCards = document.getElementById('container-cards');
 const idCardCategory = document.getElementById('card-category');
 const secondContainerCard = document.getElementById('second-container-cards');
@@ -35,6 +37,8 @@ const footerHidden = document.getElementById('footer');
 
 const productInformationCard =  document.getElementById('information-product');
 
+const idCloseProductInformationCard = document.getElementById('close-product-information-card');
+
 export const config = {
     containerCard: containerCards,
     secondContainerCard:secondContainerCard,
@@ -62,4 +66,5 @@ export const config = {
     toTheRight:toTheRight,
     footer: footerHidden,
     productInformationCard:productInformationCard,
+    idCloseProductInformationCard:idCloseProductInformationCard
 };

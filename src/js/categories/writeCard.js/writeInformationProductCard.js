@@ -1,17 +1,20 @@
-export const renderProductInformationCard = () =>{
+// Función para renderizar la tarjeta de información del producto
+export const renderProductInformationCard = (date) => {
+  const {id,api_featured_image,name,price} = date;
+  // Retorna un fragmento de HTML que representa la tarjeta de información del producto
     return `
     <a class="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl" href="#">
-    <img class="object-cover" src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c25lYWtlcnxlbnwwfHwwfHw%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="product image">
+    <img class="object-cover" src="${api_featured_image}" alt="product image">
     <span class="absolute top-0 left-0 m-2 rounded-full bg-black px-2 text-center text-sm font-medium text-white">39% OFF</span>
   </a>
   <div class="mt-4 px-3 pb-5">
     <a href="#">
-      <h5 class="text-xl tracking-tight text-slate-900">Nike Air MX Super 2500 - Red</h5>
+      <h5 class="text-center text-xl tracking-tight  text-slate-900 md:text-start">${name}</h5>
     </a>
-    <div class="mt-2 mb-5 flex items-center justify-between">
+    <div class="mt-2 mb-5 flex items-center justify-start gap-2">
       <p>
-        <span class="text-3xl font-bold text-slate-900">$449</span>
-        <span class="text-sm text-slate-900 line-through">$699</span>
+        <span class="text-3xl font-bold text-slate-900">$${(price === null || price === '0.0')? 20.0:price}</span>
+        <span class="text-sm text-slate-900 line-through hidden">$699</span>
       </p>
       <div class="flex items-center">
         <svg aria-hidden="true" class="h-5 w-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +42,7 @@ export const renderProductInformationCard = () =>{
           </svg>
           Agregar al carrito</a>
 
-          <a href="#" class="flex items-center justify-center rounded-md bg-slate-900 px-3 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
+          <a href="#" id="close-product-information-card" class="flex items-center justify-center rounded-md bg-slate-900 px-3 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
               Cerrar</a>
     </div>
   </div>
