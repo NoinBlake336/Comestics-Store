@@ -7,8 +7,8 @@ import { fetchProducts, fetchRecommendationsProducts } from "./fetchProducts.js"
 
 
 export const fetchRecommendations = async() =>{
-    const data = await fetchRecommendationsProducts({quantity:12});
-    
+    const data = await fetchRecommendationsProducts(12);
+    console.log(data)
     hiddenSkeleton(config.recommedationsContainer);
     data.map((item)=>{
         config.recommedationsContainer.innerHTML += renderItemsRecommendations(item,config.contItemsRecommendations++);

@@ -18,22 +18,34 @@ export const fetchProducts = async ({ category, quantity }) => {
     localStorage.setItem('productList', JSON.stringify(updatedData));
 
     
-    // const products = newData.slice(config.loadedProductsCount, config.loadedProductsCount + quantity);
+    const products = newData.slice(config.loadedProductsCount, config.loadedProductsCount + quantity);
     config.loadedProductsCount += products.length; // Actualizar el contador de productos cargados
     return newData;
 };
 
 
-export const fetchRecommendationsProducts = async ({quantity}) => {
-    const res = await fetch(`${config.urlFetch}`);
-    const data = await res.json();
+export const fetchRecommendationsProducts = async (quantity) => {
+    try {
+        const res = await fetch(config.urlFetch);
+        if (!res.ok) {
+            throw new Error('Failed to fetch recommendations');
+        }
+        const data = await res.json();
+        
 
-    
-    config.quantityProducts.innerHTML = data.length;
-    const products = data.slice(config.loadedProductsCount, config.loadedProductsCount + quantity); // Obtener los siguientes 10 productos
-    config.loadedProductsCount += products.length; // Actualizar el contador de productos cargados
-    return products;
-} 
+        // Obtiene los siguientes productos según la cantidad especificada
+        const products = data.slice(config.loadedProductsCount, config.loadedProductsCount + quantity);
+
+        // Actualiza el contador de productos cargados
+        config.loadedProductsCount += products.length;
+
+        return products;
+    } catch (error) {
+        console.error('Error fetching recommendations:', error.message);
+        return [];
+    }
+};
+
 
 
 
