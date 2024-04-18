@@ -45,6 +45,8 @@ const containerCart = document.getElementById('product-in-the-cart');
 
 const totalPriceContainer = document.getElementById('total-price-cart');
 let totalPrice = 0;
+
+
 export const config = {
     containerCard: containerCards,
     secondContainerCard:secondContainerCard,
@@ -76,5 +78,7 @@ export const config = {
     productList:productList,
     containerCart:containerCart,
     totalPrice:totalPrice,
-    totalPriceContainer:totalPriceContainer
+    totalPriceContainer:totalPriceContainer,
+
+    
 };

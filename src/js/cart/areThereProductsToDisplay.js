@@ -12,8 +12,7 @@ export const areThereProductsToDisplay = ()=> {
     config.containerCart.innerHTML = '';
 
     getAllProducts.map(product=>{
-        
-        config.totalPriceContainer.innerText = `$${(config.totalPrice += parseInt(product.price))}`
+        config.totalPrice += parseFloat(product.price)
         config.containerCart.innerHTML += drawingProductInTheCart(product);
     })
 }

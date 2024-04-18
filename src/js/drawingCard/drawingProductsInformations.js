@@ -13,7 +13,7 @@ export const drawingProductsInformations = (date) => {
     </a>
     <div class="mt-2 mb-5 flex items-center justify-start gap-2">
       <p>
-        <span class="text-3xl font-bold text-slate-900">$${(price === null || price === '0.0')? 20.0:price}</span>
+        <span class="text-3xl font-bold text-slate-900">$${price}</span>
         <span class="text-sm text-slate-900 line-through hidden">$699</span>
       </p>
       <div class="flex items-center">

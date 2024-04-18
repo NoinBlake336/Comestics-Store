@@ -1,4 +1,5 @@
 import { config } from "../config/index.config.js";
+import { updateCartItemCount } from "./updateCartItemCount.js";
 
 export const addProductToTheCart = (e) => {
     if (e.target.id === 'add-product-cart') {
@@ -13,6 +14,10 @@ export const addProductToTheCart = (e) => {
             cart.push(productToAdd);
             // Guardar el carrito actualizado en el localStorage
             localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Actualizar el número en el carrito en el botón
+            updateCartItemCount();
+
         }
     }
 };
