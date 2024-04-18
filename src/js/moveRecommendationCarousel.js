@@ -1,5 +1,5 @@
 // Importar la configuración desde el módulo index.config.js
-import { config } from "../config/index.config.js";
+import { config } from "./config/index.config.js";
 
 // Función para mover el carrusel de recomendaciones
 export const moveCarouselRecommendations = () => {

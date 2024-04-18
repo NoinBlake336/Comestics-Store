@@ -39,6 +39,8 @@ const productInformationCard =  document.getElementById('information-product');
 
 const idCloseProductInformationCard = document.getElementById('close-product-information-card');
 
+const productList = JSON.parse(localStorage.getItem('productList'));
+
 export const config = {
     containerCard: containerCards,
     secondContainerCard:secondContainerCard,
@@ -66,5 +68,6 @@ export const config = {
     toTheRight:toTheRight,
     footer: footerHidden,
     productInformationCard:productInformationCard,
-    idCloseProductInformationCard:idCloseProductInformationCard
+    idCloseProductInformationCard:idCloseProductInformationCard,
+    productList:productList,
 };

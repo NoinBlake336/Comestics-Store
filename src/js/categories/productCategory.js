@@ -5,7 +5,7 @@ import { fetchProducts } from "../requests/fetchProducts.js"; // Realiza la soli
 import { skeletonCard, skeletonCardRecommendations } from "../skeleton-loaders/cardSkeleton.js"; // Muestra esqueletos de tarjetas para la carga
 import { hiddenSkeleton } from "../skeleton-loaders/hiddenSkeleton.js"; // Oculta los esqueletos de tarjetas
 import { config } from "../config/index.config.js"; // Configuración global de la aplicación
-import { moveCarouselRecommendations } from "../cart/moveRecommendationCarousel.js"; // Mueve el carrusel de recomendaciones
+import { moveCarouselRecommendations } from "../moveRecommendationCarousel.js"; // Mueve el carrusel de recomendaciones
 import { fetchRecommendations } from "../requests/fetchItemsRecommendations.js"; // Realiza la solicitud para obtener recomendaciones
 import { renderProducts } from "./writeCard.js/writeProducts.js"; // Renderiza los productos en las tarjetas
 
