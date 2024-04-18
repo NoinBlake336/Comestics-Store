@@ -12,5 +12,5 @@ export const sketchingRecommendedProducts = (data,quantityTarget) =>{
             </div>
         </div>
     </li>        
-    `
+    ` 
 }
