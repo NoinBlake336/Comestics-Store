@@ -1,4 +1,4 @@
-import { renderItemsRecommendations } from "../categories/writeCard.js/writeRecommendationsProduct.js";
+import { renderItemsRecommendations } from "../writeCard/writeRecommendationsProduct.js";
 import { config } from "../config/index.config.js";
 import { hiddenSkeleton } from "../skeleton-loaders/hiddenSkeleton.js";
 import { fetchProducts, fetchRecommendationsProducts } from "./fetchProducts.js";

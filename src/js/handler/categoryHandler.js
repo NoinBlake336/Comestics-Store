@@ -6,7 +6,7 @@ import { hiddenMain, informationText, showCategoryCard } from "../menu/NavFuctio
 import { hiddenSkeleton } from "../skeleton-loaders/hiddenSkeleton.js"; // Importa la función para ocultar el esqueleto de tarjetas
 import { config } from "../config/index.config.js"; // Importa la configuración global de la aplicación
 import { moveCarouselRecommendations } from "../moveRecommendationCarousel.js"; // Importa la función para mover el carrusel de recomendaciones
-import { renderProducts } from "../categories/writeCard.js/writeProducts.js"; // Importa la función para renderizar productos en las tarjetas
+import { renderProducts } from "../writeCard/writeProducts.js"; // Importa la función para renderizar productos en las tarjetas
 import { fetchRecommendations } from "../requests/fetchItemsRecommendations.js";
 
 // Definir la función categoryHandler que maneja la carga y visualización de productos para una categoría específica

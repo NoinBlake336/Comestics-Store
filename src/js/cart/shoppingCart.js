@@ -14,7 +14,7 @@ export const displayShoppingCart = (e) => {
             // Muestra el carrito de compras si está oculto
             if (config.shoppingCart.classList.contains('hidden')) {
                 config.shoppingCart.classList.remove('hidden');
-                
+                areThereProductsToDisplay();
             }
         }
         if (e.target.id === 'closeShoppingCart') {

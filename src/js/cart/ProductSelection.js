@@ -1,4 +1,4 @@
-import { renderProductInformationCard } from "../categories/writeCard.js/writeInformationProductCard.js";
+import { renderProductInformationCard } from "../writeCard/writeInformationProductCard.js";
 import { config } from "../config/index.config.js";
 
 // Función para seleccionar un producto y mostrar sus detalles
@@ -6,7 +6,6 @@ export const productSelection = async (e) => {
     try {
         const idProduct = parseInt(e.target.id); // Obtener el ID del producto haciendo clic en un elemento del DOM
         if (!isNaN(idProduct)) { // Verificar si el ID obtenido es un número válido
-            
             // Verificar si productList es un array
             if (Array.isArray(config.productList)) {
                 // Iterar sobre la lista de productos para encontrar el producto con el ID correspondiente

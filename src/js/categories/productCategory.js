@@ -7,7 +7,7 @@ import { hiddenSkeleton } from "../skeleton-loaders/hiddenSkeleton.js"; // Ocult
 import { config } from "../config/index.config.js"; // Configuración global de la aplicación
 import { moveCarouselRecommendations } from "../moveRecommendationCarousel.js"; // Mueve el carrusel de recomendaciones
 import { fetchRecommendations } from "../requests/fetchItemsRecommendations.js"; // Realiza la solicitud para obtener recomendaciones
-import { renderProducts } from "./writeCard.js/writeProducts.js"; // Renderiza los productos en las tarjetas
+import { renderProducts } from "../writeCard/writeProducts.js"; // Renderiza los productos en las tarjetas
 
 // Función asincrónica para dibujar la categoría de productos
 export const drawTheProductsCategory = async () => {
