@@ -1,4 +1,5 @@
 import { config } from "../config/index.config.js";
+import { areThereProductsToDisplay } from "./areThereProductsToDisplay.js";
 
 export const displayShoppingCart = (e) => {
     if (e.target.id === 'openShoppingCart' || e.target.id === 'closeShoppingCart') {
@@ -14,7 +15,7 @@ export const displayShoppingCart = (e) => {
             // Muestra el carrito de compras si está oculto
             if (config.shoppingCart.classList.contains('hidden')) {
                 config.shoppingCart.classList.remove('hidden');
-                areThereProductsToDisplay();
+                areThereProductsToDisplay()
             }
         }
         if (e.target.id === 'closeShoppingCart') {

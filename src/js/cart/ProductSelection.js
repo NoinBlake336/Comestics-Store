@@ -1,4 +1,4 @@
-import { renderProductInformationCard } from "../writeCard/writeInformationProductCard.js";
+import { drawingProductsInformations } from "../drawingCard/drawingProductsInformations.js";
 import { config } from "../config/index.config.js";
 
 // Función para seleccionar un producto y mostrar sus detalles
@@ -12,10 +12,11 @@ export const productSelection = async (e) => {
                 config.productList.forEach(item => {
                     if (item.id === idProduct) { // Verificar si el ID del producto coincide con el ID obtenido
                         // Mostrar card de informacion
+                        
                         if(config.productInformationCard.classList.contains('hidden')){
                             config.productInformationCard.classList.remove('hidden');
                         }
-                        config.productInformationCard.innerHTML = renderProductInformationCard(item); // Dibujar la card de informacion del producto.
+                        config.productInformationCard.innerHTML = drawingProductsInformations(item); // Dibujar la card de informacion del producto.
 
                         
                     }

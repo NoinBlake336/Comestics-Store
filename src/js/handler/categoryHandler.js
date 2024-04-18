@@ -1,13 +1,13 @@
 // Importar funciones y módulos necesarios
-import { fetchProducts, fetchRecommendationsProducts } from "../requests/fetchProducts.js"; // Importa la función para obtener productos
+import { fetchProducts} from "../requests/fetchProducts.js"; // Importa la función para obtener productos
 import { skeletonCard, skeletonCardRecommendations } from "../skeleton-loaders/cardSkeleton.js"; // Importa la función para mostrar el esqueleto de tarjetas
 import { hiddenMain, informationText, showCategoryCard } from "../menu/NavFuctions.js"; // Importa funciones para controlar la visualización de elementos en el menú
 
 import { hiddenSkeleton } from "../skeleton-loaders/hiddenSkeleton.js"; // Importa la función para ocultar el esqueleto de tarjetas
 import { config } from "../config/index.config.js"; // Importa la configuración global de la aplicación
 import { moveCarouselRecommendations } from "../moveRecommendationCarousel.js"; // Importa la función para mover el carrusel de recomendaciones
-import { renderProducts } from "../writeCard/writeProducts.js"; // Importa la función para renderizar productos en las tarjetas
 import { fetchRecommendations } from "../requests/fetchItemsRecommendations.js";
+import { drawingProducts } from "../drawingCard/drawingProducts.js"; // Importa la función para renderizar productos en las tarjetas
 
 // Definir la función categoryHandler que maneja la carga y visualización de productos para una categoría específica
 export const categoryHandler = async ({name,description,category,secondCategory, nameProducts, secondNameProduct,target,secondTarget}) => {
@@ -33,7 +33,7 @@ export const categoryHandler = async ({name,description,category,secondCategory,
     hiddenSkeleton(target);
     // Renderizar los productos en las tarjetas del contenedor principal
     const items = data.map(item => {
-        config.containerCard.innerHTML += renderProducts(item);
+        config.containerCard.innerHTML += drawingProducts(item);
     });
 
     // Verificar si hay una segunda categoría especificada
@@ -46,7 +46,7 @@ export const categoryHandler = async ({name,description,category,secondCategory,
         hiddenSkeleton(secondTarget);
         // Renderizar los productos en las tarjetas del segundo contenedor
         const itemsSecond = data.map(item => {
-            config.secondContainerCard.innerHTML += renderProducts(item);
+            config.secondContainerCard.innerHTML += drawingProducts(item);
         });
     }
 };

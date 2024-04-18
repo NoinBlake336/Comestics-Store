@@ -1,4 +1,4 @@
-export const renderItemsRecommendations = (data,quantityTarget) =>{
+export const sketchingRecommendedProducts = (data,quantityTarget) =>{
     const {api_featured_image,name,id} = data;
     return `
     <li id="${id}" class="w-[12rem] rounded-lg p-2 absolute">

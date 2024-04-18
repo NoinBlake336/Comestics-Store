@@ -41,6 +41,10 @@ const idCloseProductInformationCard = document.getElementById('close-product-inf
 
 const productList = JSON.parse(localStorage.getItem('productList'));
 
+const containerCart = document.getElementById('product-in-the-cart');
+
+const totalPriceContainer = document.getElementById('total-price-cart');
+let totalPrice = 0;
 export const config = {
     containerCard: containerCards,
     secondContainerCard:secondContainerCard,
@@ -70,4 +74,7 @@ export const config = {
     productInformationCard:productInformationCard,
     idCloseProductInformationCard:idCloseProductInformationCard,
     productList:productList,
+    containerCart:containerCart,
+    totalPrice:totalPrice,
+    totalPriceContainer:totalPriceContainer
 };
