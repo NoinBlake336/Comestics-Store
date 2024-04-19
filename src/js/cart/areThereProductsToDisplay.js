@@ -2,6 +2,7 @@ import { config } from "../config/index.config.js";
 import { drawingAnEmptyCartList, drawingProductInTheCart } from "../drawingCard/drawingProductInTheCart.js";
 
 export const areThereProductsToDisplay = ()=> {
+    config.totalPrice = 0;
     const getAllProducts = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
 
     if(!Array.isArray(getAllProducts)  || !getAllProducts.length ) {

@@ -4,7 +4,6 @@ import { cardSession } from './cardSession.js';
 import { displayShoppingCart } from './cart/shoppingCart.js';
 import { productCategory } from './categories/indexCategories.js';
 import { productSelection } from './cart/ProductSelection.js';
-import { config } from './config/index.config.js';
 import { closeProductInformationCard } from './cart/closeProductInformationCard.js';
 import { addProductToTheCart } from './cart/addProductToTheCart.js';
 import { clearShoppingCart } from './cart/clearShoppingCart.js';
