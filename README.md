@@ -26,7 +26,6 @@ La Tienda de Maquillaje ofrece una amplia variedad de categorías de productos, 
 - Maquillaje de Labios
 - Maquillaje de Rostro
 - Accesorios de Maquillaje
-- Cuidado de la Piel
 
 ## Capturas de Pantalla
 
