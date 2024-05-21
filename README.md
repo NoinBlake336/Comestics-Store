@@ -12,7 +12,7 @@ La Tienda de Maquillaje ECommerce es una aplicación web que permite a los usuar
 
 - **Productos Recomendados**: La página principal muestra una selección de productos recomendados para que los usuarios puedan descubrir nuevas opciones de maquillaje.
 
-- **Búsqueda y Filtrado**: Los usuarios pueden buscar productos específicos y filtrarlos por categoría para encontrar exactamente lo que están buscando.
+- **Búsqueda y Filtrado**: Aun no se ha implentado
 
 - **Carrito de Compras**: Los usuarios pueden agregar productos al carrito y ver un resumen de sus compras antes de proceder al pago.
 
