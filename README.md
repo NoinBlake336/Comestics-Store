@@ -1,8 +1,8 @@
 <p align="center">
-    <img src="./images/main_page.png" alt="Página Principal">
+    <img src="./src/img/Logos/logo_1.png" alt="Página Principal">
 </p>
 
-# Tienda de Maquillaje - ECommerce
+# Tienda de Maquillaje ECommerce - Glam Haven
 
 ## Descripción
 
